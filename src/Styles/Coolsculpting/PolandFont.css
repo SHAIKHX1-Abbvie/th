@@ -1,0 +1,273 @@
+﻿body {
+    font-family: Microsoft Arial W42 Light;
+}
+
+h1 {
+    font-family: Microsoft Arial W42 Light;
+}
+
+h2 {
+    font-family: Microsoft Arial W42 Light;
+}
+
+
+a.find-more, h3, h5 {
+    font-family: Microsoft Arial W42 Light
+}
+
+.btn-text {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.input-group .search-loc {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.main-header .nav-menu ul li a {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.main-header ul.lan-select li a {
+    font-family: Microsoft Arial W42 Light;
+}
+
+@media only screen and (min-width: 992px) {
+
+    .slide-container .image-container .add-ons > p {
+        font-family: Microsoft Arial W42 Light;
+    }
+}
+
+.slide-container .image-container .bottom-left-text {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.slide-container .tab .slide-cta .text-cta {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.slide-container .dialog-box p {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.banner-container .banner-title {
+    font-family: Microsoft Arial W42 Light;
+}
+
+
+.overview-inner .section-text p {
+    font-family: Microsoft Arial W42 Light;
+}
+
+
+.img-hs-container .hs-content .courtesy-text {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.action-block .action-text a .link-text {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.info-container .text-checked {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.intro-container .dialog-box p {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.video-container .dialog-box .trans-view {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.comp-container .option-panel .panel-item > span {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.comp-container .filter-container .pills {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.comp-container .text-extra {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.comp-container .carousal-hdn .ba-tab-expanded span {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.comp-container .carousal-hdn #crsl-close a {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.comp-container .exp-editor-area .experience-editor-wrapper .before-and-after-items .carousal-hdn .ba-tab-expanded .close-text span {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.sitemap_wrapper .sm-title {
+    display: inline-block;
+    margin: 10px 0;
+    font-family: Microsoft Arial W42 Light;
+    font-size: 14px;
+    font-weight: 900;
+    color: #005eb8
+}
+
+@media only screen and (min-width: 768px) {
+    .sitemap_wrapper .sm-title {
+        font-size: 18px
+    }
+}
+
+.sitemap_wrapper .sm-content {
+    margin-left: 25px
+}
+
+    .quote-inner .quote, .sitemap_wrapper .sm-content .sm-page {
+        font-family: Microsoft Arial W42 Light;
+    }
+
+.featurecomp_container .fc_p {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.featurecomp_container .fc_pa {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.addInfo-container p {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.cookie-wrapper .cookie-text {
+    font-family: Microsoft Arial W42 Light;
+}
+
+
+.cookie-wrapper .link-to {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.clinic-wrapper .clinicInfo-inner .ci-info > p, .pagetitle-container .pagetitle_desc {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.faq_container .panel-title > a {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.faq_container .quicklink {
+    font-family: Microsoft Arial W42 Light;
+}
+
+#cs-model .modal-dialog .modal-title {
+    font-family: Microsoft Arial W42 Light;
+}
+
+#cs-model .cs-wrapper .cs-text {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.adverse-text-wrapper .adverse-text {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.clinic-wrapper .clinic-wrapper-inner .cl-anchors .cl-links {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.clinic-wrapper .clinicInfo-inner .clinicItem-wrapper .clinicInfo-address > address, .clinic-wrapper .clinicInfo-inner .clinicItem-wrapper .clinicInfo-address > span {
+    font-family: Microsoft Arial W42 Light;
+}
+
+
+
+.clinic-wrapper .clinicInfo-inner .clinicItem-wrapper .clinicInfo-address > a {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.clinic-wrapper .clinicInfo-inner .clinicItem-wrapper .pin-info .pin .pin-marker {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.clinic-wrapper .clinicInfo-inner .clinicItem-wrapper .ci-distance, .clinic-wrapper .clinicInfo-inner .clinicItem-wrapper .ci-website {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.clinic-wrapper .clinicInfo-inner .clinicItem-wrapper .ci-title {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.clinic-wrapper .info-wrap {
+    font-family: Microsoft Arial W42 Light !important
+}
+
+.map-info .clinicInfo-address > a, .map-info .clinicInfo-address > span {
+    font-family: Microsoft Arial W42 Light;
+}
+
+
+.clinic-list-wrapper a.list-item {
+    font-family: Microsoft Arial W42 Light;
+}
+
+
+.cs-result-view .allclinics-lnk {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.cs-search-results .cs-info-wrapper .cs-clinic-info .clinic-description > .cs-info-item {
+    font-family: Microsoft Arial W42 Light;
+}
+
+
+.cs-search-results .cs-info-wrapper .cs-clinic-about p {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.cs-search-results .cs-result-footer .ci-website {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.clinic-wrapper-inner .clinic-header .clinic-desc {
+    font-family: Microsoft Arial W42 Light;
+}
+
+
+.footer-section .clinic-loc .label-clinic {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.footer-section .footer-inner .info-text, .footer-section .footer-inner .info-text a {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.footer-section .footer-inner .info-extra p {
+    font-family: AvenirNextLTW01-Regular;
+}
+
+.footer-section .footer-inner .country-change {
+    font-family: Microsoft Arial W42 Light;
+}
+
+.footer-section .footer-inner .footer-logo-info {
+    font-family: Microsoft Arial W42 Light;
+}
+
+
+.footer-section ul.footer-links > li a {
+    font-family: Microsoft Arial W42 Light;
+}
+
+
+.main .main-container .btn-lnk {
+    font-family: Microsoft Arial W42 Light;
+}
+
+#cookie-law-info-bar p {
+    font-family: Microsoft Arial W42 Light;
+}
+
+#cookie-law-info-bar .cookie-heading, .h4, h4 {
+    font-family: Microsoft Arial W42 Light;
+}

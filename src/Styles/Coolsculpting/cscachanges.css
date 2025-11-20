@@ -1,0 +1,117 @@
+﻿.img-hs-container .hs-content .model-man .doublechin.hotspot {
+    top: 70px;
+    right: 90px;
+}
+
+.img-hs-container .hs-content .model-women .doublechin.hotspot {
+    top: 98px;
+    right: 82px;
+}
+
+.img-hs-container .hs-content .model-women .abdomen.hotspot {
+    top: 294px;
+    left: 80px;
+}
+
+.img-hs-container .hs-content .model-man .abdomen.hotspot {
+    top: 265px;
+    left: 67px;
+}
+
+.img-hs-container .hs-content .model-women .outerthighs.hotspot {
+    top: 382px;
+    left: 152px;
+}
+
+.img-hs-container .hs-content .model-women .innerthighs.hotspot {
+    top: 416px;
+    left: 111px;
+}
+
+.img-hs-container .hs-content .model-women .brafat.hotspot {
+    top: 162px;
+    right: 128px;
+}
+
+.img-hs-container .hs-content .model-man .flanksorsides.hotspot {
+    top: 258px;
+    right: 70px;
+}
+
+.img-hs-container .hs-content .model-women .flanksorsides.hotspot {
+    top: 293px;
+    right: 51px;
+}
+
+.img-hs-container .hs-content .model-man .upperarms.hotspot {
+    top: 206px;
+    right: 25px;
+}
+
+.img-hs-container .hs-content .model-women .upperarms.hotspot {
+    top: 179px;
+    right: 15px;
+}
+
+#confirmCookieModal .modal-header, #cookieModal .modal-header, .txt-center {
+    padding-bottom: 7px;
+}
+
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .dialog-wrapper {
+        bottom: 35px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .dialog-wrapper {
+        bottom: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .dialog-wrapper {
+        bottom: 30px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .sticky-header {
+        padding-top: 110px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .sticky-header {
+        padding-top: 110px !important;
+    }
+}
+
+@media (min-device-width: 1024px) and (max-device-width: 1366px) {
+
+    .sticky-header {
+        padding-top: 80px !important;
+    }
+
+    .main-header ul.main-nav li a {
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (min-width: 1281px) {
+
+    .dialog-wrapper {
+        bottom: 80px;
+    }
+
+    .main-header ul.main-nav li a {
+        padding: 0 20px;
+    }
+}

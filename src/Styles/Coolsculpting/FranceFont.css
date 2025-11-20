@@ -1,0 +1,16 @@
+﻿body, .featurecomp_container .fc_p {
+    font-family: 'Avenir LT W01_35 Light1475496' !important;
+    font-weight: normal !important;
+}
+
+.main-header .nav-menu ul li a, .video-container .dialog-box p, .overview-inner .section-text p, .footer-section ul.footer-links > li a, .footer-section .footer-inner .info-text, .footer-section .footer-inner .info-extra p, .footer-section .footer-inner .footer-logo-info, .clinic-wrapper-inner .clinic-header .clinic-desc, .mapsvg-tooltip p, .box-title-popup p {
+    font-family: 'Avenir LT W01_65 Medium1475532' !important;
+}
+
+h1, h2, h3, h4, .img-hs-container .hs-content .slide-tab .img-label, .box-list-pays .title-list-pays p, .box-list-pays .item-centre p a, .box-list-pays .item-centre p a, .box-title-popup p.title-popup {
+        font-family: 'Avenir LT W01_95 Black1475556' !important;
+}
+
+.intro-container .dialog-box p, a.find-more, .faq_container .panel-title > a, .footer-section .footer-inner .country-change {
+    font-family: 'Avenir LT W01_55 Roman1475520' !important;
+}

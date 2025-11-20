@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="th-TH" data-lang="th">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+
+    <style>
+        html,
+        body {
+            height: auto;
+            width: 100%;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+
+        body {
+            position: relative;
+            max-width: 1440px;
+            margin: 0 auto;
+            background: #fff;
+            color: #75787b;
+            font-family: AvenirNextLTW01-Medium;
+            font-size: 16px;
+            line-height: 24px;
+            -ms-overflow-style: scrollbar;
+        }
+
+        .cookie-avl .cookie-wrapper {
+            display: table;
+        }
+
+        .cookie-wrapper {
+            display: none;
+            position: fixed;
+            max-width: 1440px;
+            margin: 0 auto;
+            top: 0px;
+            width: 100%;
+            padding: 10px 40px 8px;
+            text-align: left;
+            background-color: #00a4e0;
+            z-index: 9999;
+        }
+
+        .main-header {
+            position: fixed;
+            max-width: 1440px;
+            margin: 0 auto;
+            width: 100%;
+            background: #fff;
+            z-index: 1000;
+        }
+
+        section,
+        article {
+            width: 100%;
+            float: left;
+        }
+
+        article,
+        aside,
+        dialog,
+        figure,
+        footer,
+        header,
+        hgroup,
+        nav,
+        section {
+            display: block;
+        }
+
+        /*header {
+                height: 80px;
+            }*/
+
+        section intro-container {
+            height: 687px;
+        }
+
+        section image-map {
+            height: 688px;
+        }
+
+        .main-header .header-inner {
+            width: 20%;
+            float: left;
+        }
+
+        .main-header .nav-menu {
+            width: 80%;
+            display: block;
+            float: left;
+        }
+
+        .main-header ul.main-nav {
+            display: block;
+            width: auto;
+            /*margin-left: 30px;*/
+        }
+
+        .main-header .nav-menu ul li {
+            display: inline-block;
+            width: auto;
+            position: relative;
+            margin: 0;
+        }
+
+        .main-header ul.lan-select {
+            display: block;
+            width: auto;
+            /*margin: 15px 0px;*/
+            border-bottom: none;
+            float: right;
+            position: relative;
+            padding: 0px 20px;
+            text-align: center;
+        }
+
+
+        .main-header .nav-flexi .list-container .overlay {
+            position: absolute;
+            display: none;
+            width: 100%;
+            height: 100%;
+            background: #f4f4f4;
+            z-index: -9;
+        }
+
+        .main-header .order-2 {
+            order: 2;
+        }
+
+        .main-header .order-3 {
+            order: 3;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+        .intro-container .image-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .main-header .nav-flexi .list-container>.list-item {
+            display: none;
+        }
+
+
+        img[loading="lazy"] {
+            display: none;
+        }
+    </style>
+
+    <script>
+        var yViewableArea = window.innerHeight;
+        if (window.innerWidth > 991) {
+            yViewableArea = 100;
+        } else if (window.innerWidth > 767) {
+            yViewableArea = 50;
+        } else {
+            yViewableArea = 50;
+        }
+        var imagePosi = 0;
+
+        function addLinktagforImage(val) {
+            var sc = document.createElement("link");
+            sc.setAttribute("href", val);
+            sc.setAttribute("rel", "preload");
+            sc.setAttribute("as", "image");
+            document.getElementsByTagName("head")[0].appendChild(sc);
+        }
+
+        function InitialImageload(img) {
+
+            //const images = document.querySelectorAll('img[loading="lazy"]');
+            if (img.getAttribute('datasrc') != undefined && img.src != img.getAttribute('datasrc') && img.getAttribute('loading') != undefined && img.getAttribute('loading') == "lazy") {
+                var device = "all";
+                if (window.innerWidth > 991) {
+                    device = "desktop";
+                } else if (window.innerWidth > 767) {
+                    device = "tablet";
+                } else {
+                    device = "mobile";
+                }
+
+                var BreakException = {};
+
+                try {
+
+
+
+                    if (img.getAttribute('device') != null && img.getAttribute('device') == 'all' && imagePosi < yViewableArea) {
+                        imagePosi += img.getAttribute('dataheight');
+                        if (img.getAttribute("datasrc") != '')
+                            img.src = img.getAttribute("datasrc")
+                        img.setAttribute('loading', 'lazy loaded')
+
+                        //setHeaderHight();
+                    } else if (img.getAttribute('device') != null && img.getAttribute('device').match('desktop') && device == "desktop" && imagePosi < yViewableArea) {
+                        imagePosi += img.getAttribute('dataheight');
+                        if (img.getAttribute("datasrc") != '')
+                            img.src = img.getAttribute("datasrc")
+                        img.setAttribute('loading', 'lazy loaded')
+
+                        //setHeaderHight();
+                    } else if (img.getAttribute('device') != null && img.getAttribute('device').match('tablet') && device == "tablet" && imagePosi < yViewableArea) {
+                        imagePosi += img.getAttribute('dataheight');
+                        if (img.getAttribute("datasrc") != '')
+                            img.src = img.getAttribute("datasrc")
+                        img.setAttribute('loading', 'lazy loaded')
+
+                        // setHeaderHight();
+                    } else if (img.getAttribute('device') != null && img.getAttribute('device').match('mobile') && device == "mobile" && imagePosi < yViewableArea) {
+                        imagePosi += img.getAttribute('dataheight');
+                        if (img.getAttribute("datasrc") != '')
+                            img.src = img.getAttribute("datasrc")
+                        img.setAttribute('loading', 'lazy loaded')
+
+                        //setHeaderHight();
+                    } else if (imagePosi >= yViewableArea) {
+                        throw BreakException;
+                    }
+                    dynamicHeight(img);
+
+                } catch (e) {
+                    if (e !== BreakException) throw e;
+                }
+            }
+
+        }
+
+        function ImageLazyload() {
+
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            if (images.length > 0) {
+                var device = "all";
+                if (window.innerWidth > 991) {
+                    device = "desktop";
+                } else if (window.innerWidth > 767) {
+                    device = "tablet";
+                } else {
+                    device = "mobile";
+                }
+
+                var BreakException = {};
+
+                try {
+
+                    for (var i = 0; i < images.length; i++) {
+                        var img = images[i];
+                        var yImagPosition = 0;
+                        const rect = img.getBoundingClientRect();
+                        yImagPosition = (rect.top != undefined ? rect.top : window.screenTop) + (window.scrollY != undefined ? window.scrollY : window.screenY);
+                        //console.log("------------------");
+                        //console.log("SRC : "+img.getAttribute("datasrc"));
+                        //console.log("DEVICE : " + img.getAttribute("device"));
+                        //console.log("yImagPosition : " + yImagPosition);
+                        //console.log("yViewableArea : " + yViewableArea);
+
+                        if (img.getAttribute('device') != null && img.getAttribute('device') == 'all' && yImagPosition < yViewableArea) {
+                            if (img.getAttribute("datasrc") != '')
+                                img.src = img.getAttribute("datasrc")
+                            img.setAttribute('loading', 'lazy loaded')
+
+                        } else if (img.getAttribute('device') != null && img.getAttribute('device').match('desktop') && device == "desktop" && yImagPosition < yViewableArea) {
+                            if (img.getAttribute("datasrc") != '')
+                                img.src = img.getAttribute("datasrc")
+                            img.setAttribute('loading', 'lazy loaded')
+
+                        } else if (img.getAttribute('device') != null && img.getAttribute('device').match('tablet') && device == "tablet" && yImagPosition < yViewableArea) {
+                            if (img.getAttribute("datasrc") != '')
+                                img.src = img.getAttribute("datasrc")
+                            img.setAttribute('loading', 'lazy loaded')
+
+                        } else if (img.getAttribute('device') != null && img.getAttribute('device').match('mobile') && device == "mobile" && yImagPosition < yViewableArea) {
+                            if (img.getAttribute("datasrc") != '')
+                                img.src = img.getAttribute("datasrc")
+                            img.setAttribute('loading', 'lazy loaded')
+
+                        } else if (yImagPosition >= yViewableArea) {
+                            throw BreakException;
+                        }
+
+                        dynamicHeight(img);
+
+
+                    }
+                } catch (e) {
+                    if (e !== BreakException) throw e;
+                }
+            }
+        }
+
+        function dynamicHeight(img) {
+
+            //if (img.parentElement != undefined && img.parentElement.parentElement != undefined &&
+            //    img.parentElement.parentElement.parentElement != undefined && img.parentElement.parentElement.parentElement.parentElement != undefined &&
+            //    img.parentElement.parentElement.parentElement.parentElement.getAttribute("class") != null &&
+            //    img.parentElement.parentElement.parentElement.parentElement.getAttribute("class").startsWith('overview-container')) {
+
+            //    if (window.innerWidth > 991) {
+
+            //        var height = img.parentElement.nextElementSibling.offsetHeight > img.parentElement.offsetHeight ? img.parentElement.nextElementSibling.offsetHeight : img.parentElement.offsetHeight;
+            //        img.parentElement.setAttribute('style','height:'+height+'px;')
+            //        img.parentElement.nextElementSibling.setAttribute('style','height:'+height+'px;')
+            //        img.setAttribute('style', 'height:'+height+'px;')
+            //    }
+            //    else {
+            //        img.parentElement.setAttribute('style', img.parentElement.getAttribute('style') + 'height:auto;')
+            //        img.parentElement.nextElementSibling.setAttribute('style', img.parentElement.nextElementSibling.getAttribute('style') + 'height:auto;')
+            //        img.setAttribute('style', 'height:auto;')
+            //    }
+
+            //}
+        }
+
+        //window.addEventListener('DOMContentLoaded', function () {
+        //    window.scrollBy(0, 1);
+        //});
+        function loadListeners() {
+
+            window.addEventListener('resize', function() {
+                ImageLazyload();
+            });
+
+            window.addEventListener('scroll', function() {
+                yViewableArea = window.innerHeight + (window.scrollY != undefined ? window.scrollY : window.screenY);
+                ImageLazyload();
+                //setHeaderHight();
+            });
+
+            window.addEventListener('load', function() {
+                ImageLazyload();
+            });
+        }
+
+        loadListeners();
+        //$(document).ready(function () {
+        //    alert('test');
+        //    ImageLazyload();
+        //})
+    </script>
+
+    <link rel="preload" href="/Images/blank-image.png?la=th" as="image" />
+
+
+    <!--Fonts for other then Australia-->
+    <link rel="stylesheet" href="//fast.fonts.net/cssapi/d12edc21-ced2-4219-94d9-f1987474ceda.css?display=swap" />
+    <link rel="stylesheet" href="//fast.fonts.net/cssapi/53fb3da4-bd03-40d5-9010-1fae680aed4b.css?display=swap" />
+    <link rel="stylesheet" href="//fast.fonts.net/cssapi/64a0ca88-fff0-48dc-8e2e-9b11887c8207.css?display=swap" />
+
+    <link rel="stylesheet" href="/Styles/Coolsculpting/FontReferenceStatic.css" />
+    <link href="/-/media/allergan-themes/theme/common/bootstrapmin.css" rel="stylesheet" type="text/css" />
+    <link href="/-/media/allergan-themes/theme/coolsculpting/custom/jquerybxslidermin.css" rel="stylesheet" type="text/css" />
+    <link href="/-/media/allergan-themes/theme/coolsculpting/bundles/minify/MinifiedFile080822081145.css" rel="stylesheet" type="text/css" />
+    <script defer type="text/javascript" src="/-/media/allergan-themes/script/common/jquery-214min.js"></script>
+    <meta name="description" content="คำตอบเกี่ยวกับทรีตเม้นท์ CoolSculpting&#174; ค่าใช้จ่าย, ระยะพักฟื้น, ผลข้างเคียง, ไขมันที่หายไป และ รูปร่างที่สมส่วนมากขึ้น">
+    <title>ค่าใช้จ่ายในการทำ, ผลลัพธ์ และข้อสงสัยอื่นๆ | CoolSculpting®</title>
+    <link rel="dns-prefetch" href="https://www.coolsculpting.co.th/th/คำถามที่พบบ่อย">
+    <link rel="preconnect" href="https://www.coolsculpting.co.th/th/คำถามที่พบบ่อย">
+    <link rel="canonical" href="https://www.coolsculpting.co.th/th/คำถามที่พบบ่อย">
+
+    <link rel="icon" href="/-/media/project/coolsculpting/page/favicon.ico" />
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var
+                f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KSQJDHS');
+    </script>
+
+
+
+    <link rel='alternate' href='https://www.coolsculpting.co.th/th/คำถามที่พบบ่อย' hreflang='x-default' />
+    <link rel='alternate' href='https://www.freezefattostaycool.com/faq' hreflang='en-th' />
+    <link rel='alternate' href='https://www.freezefattostaycool.com/th/คำถามที่พบบ่อย' hreflang='th-th' />
+    <link rel='alternate' href='https://www.cooltofit.com/sikca-sorulan-sorular' hreflang='tr-tr' />
+    <link rel='alternate' href='https://ca.coolsculpting.com/faq' hreflang='en-ca' />
+    <link rel='alternate' href='https://ca.coolsculpting.com/fr/faq' hreflang='fr-ca' />
+    <link rel='alternate' href='https://www.coolsculpting-latinoamerica.com/en/faq' hreflang='en-la' />
+    <link rel='alternate' href='https://www.coolsculpting-latinoamerica.com/preguntas-frecuentes' hreflang='es-la' />
+    <link rel='alternate' href='https://www.coolsculpting.sg/faq' hreflang='en-sg' />
+    <link rel='alternate' href='https://www.freezefattostaycool.com.tw/常見問題' hreflang='zh-tw' />
+    <link rel='alternate' href='https://za.coolsculpting.com/faq' hreflang='en-za' />
+    <link rel='alternate' href='https://uk.coolsculpting.com/faq' hreflang='en-gb' />
+    <link rel='alternate' href='https://www.coolsculptingin.com/faq' hreflang='en-in' />
+    <link rel='alternate' href='https://www.coolsculpting.com.au/faq' hreflang='en-au' />
+    <link rel='alternate' href='https://www.coolsculpting.com.br/faq' hreflang='pt-br' />
+    <link rel='alternate' href='https://www.coolsculpting.dk/ofte-stillede-sporgsmal' hreflang='da-dk' />
+    <link rel='alternate' href='https://www.coolsculpting.fi/usein-kysyttya' hreflang='fi-fi' />
+    <link rel='alternate' href='https://www.coolsculpting-france.com/faq' hreflang='fr-fr' />
+    <link rel='alternate' href='https://www.coolsculpting.de/faq' hreflang='de-de' />
+    <link rel='alternate' href='https://www.coolsculpting.hk/en/faq' hreflang='en-hk' />
+    <link rel='alternate' href='https://www.coolsculpting.hk/常見問題' hreflang='zh-hk' />
+    <link rel='alternate' href='https://www.coolsculpting.it/domande-frequenti' hreflang='it-it' />
+    <link rel='alternate' href='https://jp.coolsculpting.com/よくあるご質問' hreflang='ja-jp' />
+    <link rel='alternate' href='https://www.coolsculpting.my/faq' hreflang='en-my' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/faq' hreflang='en-bh' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/faq' hreflang='en-eg' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/faq' hreflang='en-ir' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/faq' hreflang='en-jo' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/faq' hreflang='en-kw' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/faq' hreflang='en-ma' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/faq' hreflang='en-qa' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/faq' hreflang='en-sa' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/faq' hreflang='en-ae' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/faq' hreflang='en-tn' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/faq' hreflang='en-om' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/faq' hreflang='en-lb' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fa/faq' hreflang='fa-bh' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fa/faq' hreflang='fa-eg' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fa/faq' hreflang='fa-ir' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fa/faq' hreflang='fa-jo' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fa/faq' hreflang='fa-kw' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fa/faq' hreflang='fa-lb' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fa/faq' hreflang='fa-ma' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fa/faq' hreflang='fa-om' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fa/faq' hreflang='fa-qa' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fa/faq' hreflang='fa-sa' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fa/faq' hreflang='fa-tn' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fa/faq' hreflang='fa-ae' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fr/faq' hreflang='fr-bh' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fr/faq' hreflang='fr-eg' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fr/faq' hreflang='fr-ir' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fr/faq' hreflang='fr-jo' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fr/faq' hreflang='fr-lb' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fr/faq' hreflang='fr-kw' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fr/faq' hreflang='fr-ma' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fr/faq' hreflang='fr-om' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fr/faq' hreflang='fr-qa' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fr/faq' hreflang='fr-sa' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fr/faq' hreflang='fr-tn' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/fr/faq' hreflang='fr-ae' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/ar/faq' hreflang='ar-eg' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/ar/faq' hreflang='ar-ir' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/ar/faq' hreflang='ar-jo' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/ar/faq' hreflang='ar-bh' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/ar/faq' hreflang='ar-kw' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/ar/faq' hreflang='ar-lb' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/ar/faq' hreflang='ar-ma' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/ar/faq' hreflang='ar-om' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/ar/faq' hreflang='ar-qa' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/ar/faq' hreflang='ar-sa' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/ar/faq' hreflang='ar-tn' />
+    <link rel='alternate' href='https://www.coolsculpting-mena.com/ar/faq' hreflang='ar-ae' />
+    <link rel='alternate' href='https://mx.coolsculpting.com/en/faq' hreflang='en-mx' />
+    <link rel='alternate' href='https://mx.coolsculpting.com/preguntas-frecuentes' hreflang='es-mx' />
+    <link rel='alternate' href='https://www.coolsculpting.nl/faqs-veelgestelde-vragen' hreflang='nl-nl' />
+    <link rel='alternate' href='https://www.coolsculptingno.com/vanlige-sporsmal' hreflang='no-no' />
+    <link rel='alternate' href='https://www.coolsculptingpl.com/czesto-zadawane-pytania' hreflang='pl-pl' />
+    <link rel='alternate' href='https://www.coolsilhueta.pt/perguntas-frequentes' hreflang='pt-pt' />
+    <link rel='alternate' href='https://www.coolsculpting.se/vanliga-fragor' hreflang='sv-se' />
+    <link rel='alternate' href='https://www.coolsculpting.kr/자주-묻는-질문' hreflang='ko-kr' />
+    <link rel='alternate' href='https://www.yosoycool.es/preguntas-frecuentes' hreflang='es-es' />
+
+
+
+
+
+    <script>
+        var siteDefaultLanguage = 'en';
+
+
+        var supportLowercaseURL = false;
+
+        var removeDefaultLanguage = 1;
+        if (removeDefaultLanguage == 1) {
+            removeDefaultLanguage = true;
+        } else {
+            removeDefaultLanguage = false;
+        }
+    </script>
+
+
+    <!--Fonts for other then Australia-->
+    <link rel="stylesheet" href="//fast.fonts.net/cssapi/d12edc21-ced2-4219-94d9-f1987474ceda.css?display=swap" />
+    <link rel="stylesheet" href="//fast.fonts.net/cssapi/53fb3da4-bd03-40d5-9010-1fae680aed4b.css?display=swap" />
+    <link rel="stylesheet" href="//fast.fonts.net/cssapi/64a0ca88-fff0-48dc-8e2e-9b11887c8207.css?display=swap" />
+
+    <script defer rel="preload" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALkGGfcTisYYtZuo-kd-vY2mQ3oDUuWEQ&amp;channel=CoolSculpting-TH&amp;libraries=places"></script>
+    <script defer type="text/javascript" src="/Scripts/Coolsculpting/angular.min-1.8.2.js"></script>
+    <script defer type="text/javascript" src="/Scripts/Coolsculpting/angular-route.min-1.8.2.js"></script>
+    <script defer type="text/javascript" src="/Scripts/Coolsculpting/angular-cookies.min-1.8.2.js"></script>
+    <script defer type="text/javascript" src="/Scripts/Coolsculpting/angular-filter.js"></script>
+    <script defer type="text/javascript" src="/-/media/allergan-themes/script/coolsculpting/bundles/minify/MinifiedFile151121152323.js"> </script>
+    <script defer type="text/javascript" src="/Scripts/Coolsculpting/bootstrap.min.js"></script>
+    <script defer type="text/javascript" src="/Scripts/Coolsculpting/modalVideo.min.js"></script>
+    <script defer type="text/javascript" src="/Scripts/Coolsculpting/mapsvg.min.js"></script>
+    <script defer type="text/javascript" src="/Scripts/Coolsculpting/mapfinder.js"></script>
+
+    <script defer type="text/javascript" src="/Scripts/Coolsculpting/jquery.nicescroll.min.js"></script>
+    <script defer type="text/javascript" src="/Scripts/Coolsculpting/jquery.bxslider.min.js"></script>
+    <script defer type="text/javascript" src="/Scripts/Coolsculpting/player.js"></script>
+
+    <script defer type="text/javascript" src="/Scripts/Coolsculpting/minified/Agn.Project.Coolsculpting.jquery.geocomplete.min.js"></script>
+    <script defer type="text/javascript" src="/Scripts/Coolsculpting/minified/Agn.Project.Coolsculpting.hcpform.min.js"></script>
+    <script defer type="text/javascript" src="/Scripts/Coolsculpting/geolocation-marker.js"></script>
+    <script defer type="text/javascript" src="/Scripts/Coolsculpting/jquery.cookie.js"></script>
+    <script defer type="text/javascript" src="/Scripts/Coolsculpting/player.js"></script>
+    <script defer type="text/javascript" src="/Scripts/Coolsculpting/managecookie.js"></script>
+</head>
+
+<body class="th ThailandCoolsculpting" pagename="FAQ" data-imglazyload="1" enablelanguagecodeupdate="True">
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KSQJDHS" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+
+
+    <div id="settings-site" data-isEEditor="0">
+        <div id="settings-geolocation" data-geolocationapi=https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyAltuYszRmFVsQ6SIQv6O7UYvITwc57dd0>
+        </div>
+        <div id="settings-countrycode" data-country=TH>
+        </div>
+        <div id="settings-countrycodefilter" data-countries="TH">
+        </div>
+        <div id="settings-countryname" data-countryname="Thailand">
+        </div>
+        <div id="settings-unbranded" data-unbranded="False">
+        </div>
+        <div id="settings-isgdpr" data-gdpr="False">
+        </div>
+        <div id="settings-isdistanceinkm" data-distanceinkm="False">
+        </div>
+        <div id="settings-isradius" data-radius="">
+        </div>
+
+        <div id="settings-SFGlobalcliniclocator" data-iclapproach="1">
+        </div>
+        <div id="settings-ICLDistance" data-icldistancevalue="">
+        </div>
+        <div id="settings-ICLCountryCode" data-iclcountrycodevalue="TH">
+        </div>
+        <div id="settings-ICLClustercountrycode" data-clustercountrycodevalue="">
+        </div>
+        <div id="settings-ImageLazyload" data-imagelazyload="1">
+        </div>
+
+    </div>
+
+    <!--  Start Sitecore Jquery Issues Conflict -->
+    <script>
+        if (typeof jQuery != 'undefined' && jQuery.fn.jquery == "1.5.1") {
+            jQuery.noConflict(true);
+        }
+    </script>
+    <!--  End Sitecore Jquery Issues Conflict -->
+    <div ng-app="allerganApp" class="ng-coolsculpting">
+        <!--Start: Cookie Policy Section-->
+        <section cookie class="ng-scope">
+
+
+
+            <div class="modal fade" id="csmodelpopup">
+                <div class="modal-dialog" role="dialog" tabindex="">
+                    <div class="modal-content" role="document">
+
+                        <div class="main container" style="height: auto;">
+                            <div class="raw">
+                                <div class="main-container" style="margin: auto; top: auto;">
+                                    <div class="w-cover hcp-popup">
+
+                                        <h1 class="m40">
+                                        </h1>
+                                        <div class="bottom-text">
+                                        </div>
+                                        <a class="btn-lnk m40" id="landinghcp-btn">
+                                            <span class="cursor-md">
+                                            </span>
+
+                                        </a>
+
+                                        <span class="cursor-md">
+
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--End: Cookie Policy Section-->
+        <!--Start: Header Section-->
+
+        <section header class="ng-scope">
+            <header class="main-header clearfix " role="banner">
+                <div class="header-inner">
+                    <div class="header exp-editor">
+                        <a href="/th" class="logo ft-left"><img src="/Images/blank-image.png?la=th" dataheight="42" src="" onload="InitialImageload(this)" loading="lazy" device="desktop" datasrc="/-/media/project/coolsculpting/logo/logo-coolsculp-dt.png" alt="" class="hidden-xs hidden-sm" /><img src="/Images/blank-image.png?la=th" dataheight="42" src="" onload="InitialImageload(this)" loading="lazy" device="tablet" datasrc="/-/media/project/coolsculpting/logo/logo-coolsculp-dt.png" alt="" class="hidden-xs hidden-md hidden-lg" /><img src="/Images/blank-image.png?la=th" dataheight="42" src="" onload="InitialImageload(this)" loading="lazy" device="mobile" datasrc="/-/media/project/coolsculpting/logo/logo-coolsculp-dt.png" alt="" class="hidden-sm hidden-md hidden-lg" /></a>
+
+
+                        <a href="javascript:void(0);" aria-expanded="false" role="button" aria-label="toggle navigation" data-ng-class="{active: active}" data-ng-click="active =!active;menuToggled();" class="btn menu-btn ft-right">
+                            <span class="sr-only">เมนูนำทาง</span>
+                            <div data-ng-hide="active" class="burger-menu ft-left">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <img src="/Images/blank-image.png?la=th" dataheight="24" src="" Class="close-toggle" onload="InitialImageload(this)" loading="lazy" device="all" datasrc="/-/media/project/coolsculpting/logo/close.png" data-ng-show="active" alt="" />
+
+                        </a>
+                    </div>
+
+                </div>
+                <div class="nav-menu" role="navigation">
+                    <ul class="ft-left main-nav order-2 nav-flexi " role="menubar">
+                        <li class="list-container" role="menuitem">
+                            <div class="overlay"></div>
+
+
+
+<a href="/th" class="nav-title" aria-expanded="false" aria-haspopup="true">หน้าหลัก</a>                                
+<a href="/th" ng-click="navigateNxt($event);" class="list-item first-item-menu">หน้าหลัก</a>                                                            </li>
+                        <li class="list-container" role="menuitem">
+                            <div class="overlay"></div>
+
+
+
+                            <a href="javascript:void(0);" class="nav-title" aria-expanded="false" aria-haspopup="true">เกี่ยวกับ CoolSculpting®<img src="/-/media/project/coolsculpting/navigation/icon-drop-blue.png?h=24&amp;w=24&amp;la=th&amp;hash=5766B4F68D1337FBB026301F127F76F02ADF1806" alt=""></a>
+                            <a href="javascript:void(0);" ng-click="navigateNxt($event);" class="list-item">เกี่ยวกับ CoolSculpting®</a> 
+                            <ul class="sub-menu dropdown-content">
+                                <li>
+
+<a href="/th/การกำจัดไขมันด้วยการแช่แข็ง-คืออะไร" ng-click="navigateNxt($event);" class="list-item">                                                 <!--inner Navigation Menu DisplayName-->
+CoolSculpting® คืออะไร</a>
+                                </li>
+                                <li>
+
+<a href="/th/อะไรคือสิ่งที่คาดหวัง" ng-click="navigateNxt($event);" class="list-item">                                                 <!--inner Navigation Menu DisplayName-->
+อะไรคือสิ่งที่คาดหวัง</a>
+                                </li>
+                                <li>
+
+<a href="/th/หลักการทำงาน" ng-click="navigateNxt($event);" class="list-item">                                                 <!--inner Navigation Menu DisplayName-->
+มันทำงานอย่างไร</a>
+                                </li>
+                                <li>
+
+<a href="/th/คำถามที่พบบ่อย" ng-click="navigateNxt($event);" class="list-item">                                                 <!--inner Navigation Menu DisplayName-->
+คำถามที่พบบ่อย</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <ul class="lan-select order-3">
+                        <li>
+                            <a href="/" data-lancode="EN"> <abbr title="English" class="langtitle">
+                                    EN
+                                    <span class="sr-only">Click here to choose English language</span>
+                                </abbr>
+                            </a>
+                            <span class="divider">/</span>
+
+                        </li>
+                        <li>
+<a href="/th" data-lancode="TH" class="active">                                                <abbr title="Thailand" class="langtitle">
+                                    TH
+                                    <span class="sr-only">Click here to choose Thailand language</span>
+                                </abbr>
+                            </a>
+
+                        </li>
+                    </ul>
+
+                    <ul class="cta-group order-1 " role="menubar">
+                        <li role="menuitem">
+                            <a href="/th/ค้นหาคลินิก" onclick="dataLayer.push({'buttonLocation': 'Header','event': 'findProviderClicked'});" class="btn cta"><img src="/Images/blank-image.png?la=th" dataheight="29" src="" onload="InitialImageload(this)" loading="lazy" device="all" datasrc="/-/media/project/coolsculpting/navigation/map-pin-blue.png" alt="" /> <span>
+                                    ค้นหาคลินิก
+                                </span>
+                                <img src="/-/media/project/coolsculpting/navigation/icon-drop.png?h=24&amp;w=24&amp;la=th&amp;hash=6598FEAC74E83DE14764BF2D125C718ECD1C2AD0" class="icon-nav" alt="" /></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </header>
+            <div class="sticky-header "></div>
+        </section>
+        <!--End: Header Section-->
+        <!--Layout Changes: Start-->
+        <main>
+            <section>
+
+
+                <section intro class="ng-scope">
+                    <div class="intro-container">
+                        <div class="image-container">
+                            <img src="/Images/blank-image.png?la=th" dataheight="750" src="#" onload="InitialImageload(this)" loading="lazy" device="desktop" datasrc="/-/media/project/coolsculpting/faq/FAQmark-b-0379-copy.png" alt="" class="image home hidden-xs hidden-sm" /><img src="/Images/blank-image.png?la=th" dataheight="600" src="#" onload="InitialImageload(this)" loading="lazy" device="tablet" datasrc="/-/media/project/coolsculpting/faq/faqtab.png" alt="" class="image home hidden-xs hidden-md hidden-lg" /><img src="/Images/blank-image.png?la=th" dataheight="600" src="#" onload="InitialImageload(this)" loading="lazy" device="mobile" datasrc="/-/media/project/coolsculpting/faq/ic03332abeautybookapacspread29h23x.png" alt="" class="image home hidden-sm hidden-md hidden-lg" />
+                            <div class="dialog-wrapper">
+                                <div class="dialog-box" role="presentation">
+                                    <div class="dialog-align">
+                                        <h1>คำถามที่พบบ่อย</h1>
+                                        <p>
+                                            หากคุณมีคำถามเกี่ยวกับ CoolSculpting<sup>&reg;</sup> เราพร้อมช่วยคุณ ด้านล่างนี้คือคำตอบสำหรับคำถามที่พบบ่อย
+
+
+
+                                        </p>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section faq class="ng-scope">
+                    <div class="faq_container white_bg ">
+                        <div class="block-inner quicklink">
+                            <ul>
+                                <li class="quicklink-text" role="presentation">ลิงค์ด่วน: </li>
+                                <li>
+                                    <a href="#qlink1" class="skip-lang-force">
+                                        สนใจทำทรีตเมนต์ CoolSculpting®
+                                    </a>,
+                                </li>
+                                <li>
+                                    <a href="#qlink2" class="skip-lang-force">
+                                        กระบวนการทำทรีตเมนต์
+                                    </a>,
+                                </li>
+                                <li>
+                                    <a href="#qlink3" class="skip-lang-force">
+                                        หลังจากทำทรีตเมนต์
+                                    </a>,
+                                </li>
+                                <li>
+                                    <a href="#qlink4" class="skip-lang-force">
+                                        อื่นๆ
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="block-inner faq-wrapper">
+                            <div id="qlink1">
+                                <a href="/th/คำถามที่พบบ่อย-ประเภท1?cid=1" Class="faq-heading-link">
+                                    <h3 aria-level="2" class="faq_heading">
+                                        สนใจทำทรีตเมนต์ CoolSculpting®
+                                    </h3>
+                                </a>
+                                <div class="panel-group" id="accordion1">
+                                    <div class="panel panel-default white_bg">
+                                        <div class="panel-heading">
+                                            <h4 aria-level="3" class="panel-title">
+                                                <a data-toggle="collapse" id="1" ng-click="setDeepLink('1');" data-parent="#accordion1" href="#collapse1" aria-expanded="false" onclick="if( $(this).attr('aria-expanded')=='true'){ return; }else{ dataLayer.push({&#39;faqName&#39;:&#39;Am I a good candidate for the Cryolipolysis procedure?&#39;,&#39;event&#39;:&#39;faqViewed&#39;}); }">
+
+                                                    ฉันสามารถทำทรีตเมนต์ CoolSculpting® ได้หรือไม่?
+
+                                                    <span><img src="/Images/blank-image.png?h=24&amp;w=24&amp;la=th" src="#" onload="InitialImageload(this)" loading="lazy" device="all" datasrc="/-/media/project/coolsculpting/faq/chevron-right1.png" alt="" class="arw dwn_arw" /></span>
+
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse1" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p class="panel-text">
+                                                    กระบวนการลดไขมันด้วยวิธี CoolSculpting<sup>&reg;</sup> ได้รับการออกแบบมาเป็นพิเศษสำหรับผู้ที่มีไขมันส่วนเกินที่ไม่พึงประสงค์ในบริเวณเป้าหมาย<sup>1,2</sup> ซึ่งต่างจากการทำศัลยกรรมลดน้ำหนัก (เช่น การผ่าตัดลดขนาดกระเพาะอาหาร) กระบวนการ CoolSculpting<sup>&reg;</sup> ไม่ใช่ทางเลือกในการลดน้ำหนักสำหรับผู้เป็นโรคอ้วน<sup>3</sup> ผู้ที่สามารถทำทรีตเมนต์ด้วยวิธี CoolSculpting<sup>&reg;</sup> ได้ควรเป็นผู้ที่ต้องการกำจัดก้อนไขมันที่สังเกตเห็นได้ในบางบริเวณ4 คนมากมายต้องการทางเลือกที่ไม่ต้องผ่าตัด ที่แตกต่างไปจากการดูดไขมัน<sup>4,5</sup>
+                                                    <br />
+                                                    <br />
+                                                    ขั้นตอนแรกที่คุณควรทำคือการพูดคุยกับแพทย์ของ CoolSculpting<sup>&reg;</sup> เพื่อดูว่ากระบวนการนี้เหมาะกับคุณหรือไม่
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <noscript>
+                                            กระบวนการลดไขมันด้วยวิธี CoolSculpting<sup>&reg;</sup> ได้รับการออกแบบมาเป็นพิเศษสำหรับผู้ที่มีไขมันส่วนเกินที่ไม่พึงประสงค์ในบริเวณเป้าหมาย<sup>1,2</sup> ซึ่งต่างจากการทำศัลยกรรมลดน้ำหนัก (เช่น การผ่าตัดลดขนาดกระเพาะอาหาร) กระบวนการ CoolSculpting<sup>&reg;</sup> ไม่ใช่ทางเลือกในการลดน้ำหนักสำหรับผู้เป็นโรคอ้วน<sup>3</sup> ผู้ที่สามารถทำทรีตเมนต์ด้วยวิธี CoolSculpting<sup>&reg;</sup> ได้ควรเป็นผู้ที่ต้องการกำจัดก้อนไขมันที่สังเกตเห็นได้ในบางบริเวณ4 คนมากมายต้องการทางเลือกที่ไม่ต้องผ่าตัด ที่แตกต่างไปจากการดูดไขมัน<sup>4,5</sup>
+                                            <br />
+                                            <br />
+                                            ขั้นตอนแรกที่คุณควรทำคือการพูดคุยกับแพทย์ของ CoolSculpting<sup>&reg;</sup> เพื่อดูว่ากระบวนการนี้เหมาะกับคุณหรือไม่
+                                        </noscript>
+                                    </div>
+                                    <div class="panel panel-default white_bg">
+                                        <div class="panel-heading">
+                                            <h4 aria-level="3" class="panel-title">
+                                                <a data-toggle="collapse" id="5" ng-click="setDeepLink('5');" data-parent="#accordion1" href="#collapse2" aria-expanded="false" onclick="if( $(this).attr('aria-expanded')=='true'){ return; }else{ dataLayer.push({&#39;faqName&#39;:&#39;Where does the fat go? Are the results permanent?&#39;,&#39;event&#39;:&#39;faqViewed&#39;}); }">
+
+                                                    ไขมันหายไปไหน? ผลลัพธ์ที่ได้จะคงทนถาวรหรือไม่?
+
+                                                    <span><img src="/Images/blank-image.png?h=24&amp;w=24&amp;la=th" src="#" onload="InitialImageload(this)" loading="lazy" device="all" datasrc="/-/media/project/coolsculpting/faq/chevron-right1.png" alt="" class="arw dwn_arw" /></span>
+
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse2" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p class="panel-text">
+                                                    เมื่อเซลล์ไขมันที่ถูกกระทำจับตัวเป็นผลึก (แช่แข็ง) มันจะถูกทำลาย<sup>18,19</sup> และร่างกายจะจัดการกับเซลล์ไขมันที่ถูกทำลาย และกำจัดออกจากร่างกายโดยวิธีการตามธรรมชาติ<sup>18-20 </sup> เมื่อเซลล์ไขมันที่ถูกกระทำหายไปแล้ว มันจะไม่กลับมาอีก*<sup>18-20</sup> ดูในหน้า <a href="%e0%b8%ab%e0%b8%a5%e0%b8%b1%e0%b8%81%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%97%e0%b8%b3%e0%b8%87%e0%b8%b2%e0%b8%99.html">มันทำงานอย่างไร</a> เพื่อเรียนรู้เพิ่มเติม
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <noscript>
+                                            เมื่อเซลล์ไขมันที่ถูกกระทำจับตัวเป็นผลึก (แช่แข็ง) มันจะถูกทำลาย<sup>18,19</sup> และร่างกายจะจัดการกับเซลล์ไขมันที่ถูกทำลาย และกำจัดออกจากร่างกายโดยวิธีการตามธรรมชาติ<sup>18-20 </sup> เมื่อเซลล์ไขมันที่ถูกกระทำหายไปแล้ว มันจะไม่กลับมาอีก*<sup>18-20</sup> ดูในหน้า <a href="%e0%b8%ab%e0%b8%a5%e0%b8%b1%e0%b8%81%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%97%e0%b8%b3%e0%b8%87%e0%b8%b2%e0%b8%99.html">มันทำงานอย่างไร</a> เพื่อเรียนรู้เพิ่มเติม
+                                        </noscript>
+                                    </div>
+                                    <div class="panel panel-default white_bg">
+                                        <div class="panel-heading">
+                                            <h4 aria-level="3" class="panel-title">
+                                                <a data-toggle="collapse" id="" ng-click="setDeepLink('');" data-parent="#accordion1" href="#collapse3" aria-expanded="false" onclick="if( $(this).attr('aria-expanded')=='true'){ return; }else{ dataLayer.push({&#39;faqName&#39;:&#39;Who should not have the Cryolipolysis procedure?&#39;,&#39;event&#39;:&#39;faqViewed&#39;}); }">
+
+                                                    ผู้ใดไม่ควรทำทรีตเมนต์ CoolSculpting®?
+
+                                                    <span><img src="/Images/blank-image.png?h=24&amp;w=24&amp;la=th" src="#" onload="InitialImageload(this)" loading="lazy" device="all" datasrc="/-/media/project/coolsculpting/faq/chevron-right1.png" alt="" class="arw dwn_arw" /></span>
+
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse3" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p class="panel-text">
+                                                    กระบวนการ CoolSculpting<sup>®</sup> ไม่สามารถใช้ได้กับทุกคน คุณไม่สามารถทำทรีตเมนต์ CoolSculpting<sup>®</sup> ได้ หากคุณเป็นโรค Cryoglobulinaemia, Cold Agglutinin Disease หรือ Paroxysmal Cold Haemoglobinuria<sup>6</sup> กระบวนการ CoolSculpting® ไม่ใช่วิธีการรักษาผู้เป็นโรคอ้วน<sup>3</sup> คุณควรปรึกษาแพทย์ของคุณว่ากระบวนการ CoolSculpting<sup>®</sup> เป็นวิธีที่เหมาะกับคุณหรือไม่ เช่นเดียวกับการเลือกใช้กระบวนการทางการแพทย์อื่นๆ
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <noscript>
+                                            กระบวนการ CoolSculpting<sup>®</sup> ไม่สามารถใช้ได้กับทุกคน คุณไม่สามารถทำทรีตเมนต์ CoolSculpting<sup>®</sup> ได้ หากคุณเป็นโรค Cryoglobulinaemia, Cold Agglutinin Disease หรือ Paroxysmal Cold Haemoglobinuria<sup>6</sup> กระบวนการ CoolSculpting® ไม่ใช่วิธีการรักษาผู้เป็นโรคอ้วน<sup>3</sup> คุณควรปรึกษาแพทย์ของคุณว่ากระบวนการ CoolSculpting<sup>®</sup> เป็นวิธีที่เหมาะกับคุณหรือไม่ เช่นเดียวกับการเลือกใช้กระบวนการทางการแพทย์อื่นๆ
+                                        </noscript>
+                                    </div>
+                                    <div class="panel panel-default white_bg">
+                                        <div class="panel-heading">
+                                            <h4 aria-level="3" class="panel-title">
+                                                <a data-toggle="collapse" id="3" ng-click="setDeepLink('3');" data-parent="#accordion1" href="#collapse4" aria-expanded="false" onclick="if( $(this).attr('aria-expanded')=='true'){ return; }else{ dataLayer.push({&#39;faqName&#39;:&#39;Can this procedure reduce fat anywhere on my body?&#39;,&#39;event&#39;:&#39;faqViewed&#39;}); }">
+
+                                                    กระบวนการ CoolSculpting® สามารถลดไขมันได้ทุกจุดในร่างกายของฉันหรือไม่?
+
+                                                    <span><img src="/Images/blank-image.png?h=24&amp;w=24&amp;la=th" src="#" onload="InitialImageload(this)" loading="lazy" device="all" datasrc="/-/media/project/coolsculpting/faq/chevron-right1.png" alt="" class="arw dwn_arw" /></span>
+
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse4" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p class="panel-text">
+                                                    กระบวนการ CoolSculpting<sup>®</sup> สามารถทำได้กับก้อนไขมันที่เห็นได้ด้วยตาในบริเวณใต้คาง, ต้นขา, หน้าท้อง และรอบเอว (ห่วงยาง) รวมถึงไขมันบริเวณรอบยกทรง, ไขมันด้านหลัง, ใต้แก้มก้น (หรือที่เรียกว่า banana roll) และต้นแขนส่วนบน<sup>1,2,7-17</sup> แพทย์ของคุณจะกำหนดแผนการทำทรีตเมนต์ที่ออกแบบมาเฉพาะสำหรับร่างกายของคุณและเป้าหมายแต่ละอย่างของคุณ
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <noscript>
+                                            กระบวนการ CoolSculpting<sup>®</sup> สามารถทำได้กับก้อนไขมันที่เห็นได้ด้วยตาในบริเวณใต้คาง, ต้นขา, หน้าท้อง และรอบเอว (ห่วงยาง) รวมถึงไขมันบริเวณรอบยกทรง, ไขมันด้านหลัง, ใต้แก้มก้น (หรือที่เรียกว่า banana roll) และต้นแขนส่วนบน<sup>1,2,7-17</sup> แพทย์ของคุณจะกำหนดแผนการทำทรีตเมนต์ที่ออกแบบมาเฉพาะสำหรับร่างกายของคุณและเป้าหมายแต่ละอย่างของคุณ
+                                        </noscript>
+                                    </div>
+                                    <div class="panel panel-default white_bg">
+                                        <div class="panel-heading">
+                                            <h4 aria-level="3" class="panel-title">
+                                                <a data-toggle="collapse" id="4" ng-click="setDeepLink('4');" data-parent="#accordion1" href="#collapse5" aria-expanded="false" onclick="if( $(this).attr('aria-expanded')=='true'){ return; }else{ dataLayer.push({&#39;faqName&#39;:&#39;I don&#39;t like my double chin. Can the procedure help me lose it?&#39;,&#39;event&#39;:&#39;faqViewed&#39;}); }">
+
+                                                    ฉันไม่ชอบคางสองชั้นของตัวเอง กระบวนการ CoolSculpting® จะทำให้มันหายไปได้ไหม?
+
+                                                    <span><img src="/Images/blank-image.png?h=24&amp;w=24&amp;la=th" src="#" onload="InitialImageload(this)" loading="lazy" device="all" datasrc="/-/media/project/coolsculpting/faq/chevron-right1.png" alt="" class="arw dwn_arw" /></span>
+
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse5" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p class="panel-text">
+                                                    ได้ กระบวนการ CoolSculpting<sup>®</sup> สามารถทำทรีตเมนต์กับก้อนไขมันบริเวณใต้คางที่มองเห็นได้<sup>1,9</sup> การทำไขมันให้เยือกแข็งแล้วนำออกจากคางสองชั้นเป็นเรื่องที่ทำได้โดยใช้กระบวนการ CoolSculpting<sup>®</sup> เช่นเดียวกับส่วนอื่นๆ ของร่างกาย (เช่น หน้าท้อง, ห่วงยาง/ด้านข้าง, ต้นขา)<sup>1,2,7-17</sup> ในการทำทรีตเมนต์ CoolSculpting<sup>®</sup> กับคางสองชั้น คนไข้จะเห็นผลหลังจากทำเพียง 2 ครั้งเท่านั้น<sup>1,9</sup>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <noscript>
+                                            ได้ กระบวนการ CoolSculpting<sup>®</sup> สามารถทำทรีตเมนต์กับก้อนไขมันบริเวณใต้คางที่มองเห็นได้<sup>1,9</sup> การทำไขมันให้เยือกแข็งแล้วนำออกจากคางสองชั้นเป็นเรื่องที่ทำได้โดยใช้กระบวนการ CoolSculpting<sup>®</sup> เช่นเดียวกับส่วนอื่นๆ ของร่างกาย (เช่น หน้าท้อง, ห่วงยาง/ด้านข้าง, ต้นขา)<sup>1,2,7-17</sup> ในการทำทรีตเมนต์ CoolSculpting<sup>®</sup> กับคางสองชั้น คนไข้จะเห็นผลหลังจากทำเพียง 2 ครั้งเท่านั้น<sup>1,9</sup>
+                                        </noscript>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div id="qlink2">
+                                <a href="/th/คำถามที่พบบ่อย-ประเภท2?cid=2" Class="faq-heading-link">
+                                    <h3 aria-level="2" class="faq_heading">
+                                        กระบวนการทำทรีตเมนต์
+                                    </h3>
+                                </a>
+                                <div class="panel-group" id="accordion2">
+                                    <div class="panel panel-default white_bg">
+                                        <div class="panel-heading">
+                                            <h4 aria-level="3" class="panel-title">
+                                                <a data-toggle="collapse" id="9" ng-click="setDeepLink('9');" data-parent="#accordion2" href="#collapse6" aria-expanded="false" onclick="if( $(this).attr('aria-expanded')=='true'){ return; }else{ dataLayer.push({&#39;event&#39;: &#39;faqViewed&#39; }); }">
+
+                                                    การทำการรักษาแต่ละครั้งใช้เวลานานเท่าใด? ฉันจะต้องทำการรักษากี่ครั้ง?
+
+                                                    <span><img src="/Images/blank-image.png?h=24&amp;w=24&amp;la=th" src="#" onload="InitialImageload(this)" loading="lazy" device="all" datasrc="/-/media/project/coolsculpting/faq/chevron-right1.png" alt="" class="arw dwn_arw" /></span>
+
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse6" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p class="panel-text">
+                                                    แพทย์ CoolSculpting<sup>&reg;</sup> ของคุณจะช่วยกำหนดแผนการทำทรีตเมนต์เป็นรายบุคคล เพื่อปรับให้เหมาะกับเป้าหมายที่ต้องการ ระยะเวลาในการทำทรีตเมนต์ CoolSculpting&reg; จะแตกต่างกันไปตามจำนวนพื้นที่ที่ต้องทำทรีตเมนต์ในระหว่างการทำแต่ละครั้ง เทคโนโลยีล่าสุดของ CoolSculpting<sup>&reg;</sup> สามารถทำทรีตเมนต์ให้แก่คนไข้ได้ภายใน 60 นาที6 หากคุณมีเวลาจำกัด แต่มีไขมันส่วนเกินหลายบริเวณ การปฏิบัติการบางอย่างอาจต้องใช้กระบวนการ CoolSculpting<sup>&reg;</sup>; หลายวิธี แพทย์ของคุณจะเป็นผู้อธิบายกระบวนการ และพิจารณาว่าวิธีการนั้นๆ เป็นตัวเลือกที่เหมาะสมกับคุณหรือไม่ คุณและแพทย์ของคุณอาจนัดหมายเพื่อทำทรีตเมนต์เพิ่มเติม หรือนัดหมายเพื่อพูดคุย เพื่อให้การทำทรีตเมนต์ตรงตามเป้าหมายของคุณมากที่สุด
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <noscript>
+                                            แพทย์ CoolSculpting<sup>&reg;</sup> ของคุณจะช่วยกำหนดแผนการทำทรีตเมนต์เป็นรายบุคคล เพื่อปรับให้เหมาะกับเป้าหมายที่ต้องการ ระยะเวลาในการทำทรีตเมนต์ CoolSculpting&reg; จะแตกต่างกันไปตามจำนวนพื้นที่ที่ต้องทำทรีตเมนต์ในระหว่างการทำแต่ละครั้ง เทคโนโลยีล่าสุดของ CoolSculpting<sup>&reg;</sup> สามารถทำทรีตเมนต์ให้แก่คนไข้ได้ภายใน 60 นาที6 หากคุณมีเวลาจำกัด แต่มีไขมันส่วนเกินหลายบริเวณ การปฏิบัติการบางอย่างอาจต้องใช้กระบวนการ CoolSculpting<sup>&reg;</sup>; หลายวิธี แพทย์ของคุณจะเป็นผู้อธิบายกระบวนการ และพิจารณาว่าวิธีการนั้นๆ เป็นตัวเลือกที่เหมาะสมกับคุณหรือไม่ คุณและแพทย์ของคุณอาจนัดหมายเพื่อทำทรีตเมนต์เพิ่มเติม หรือนัดหมายเพื่อพูดคุย เพื่อให้การทำทรีตเมนต์ตรงตามเป้าหมายของคุณมากที่สุด
+                                        </noscript>
+                                    </div>
+                                    <div class="panel panel-default white_bg">
+                                        <div class="panel-heading">
+                                            <h4 aria-level="3" class="panel-title">
+                                                <a data-toggle="collapse" id="7" ng-click="setDeepLink('7');" data-parent="#accordion2" href="#collapse7" aria-expanded="false" onclick="if( $(this).attr('aria-expanded')=='true'){ return; }else{ dataLayer.push({&#39;faqName&#39;:&#39;What does it feel like?&#39;,&#39;event&#39;:&#39;faqViewed&#39;}); }">
+
+                                                    มันจะรู้สึกอย่างไร?
+
+                                                    <span><img src="/Images/blank-image.png?h=24&amp;w=24&amp;la=th" src="#" onload="InitialImageload(this)" loading="lazy" device="all" datasrc="/-/media/project/coolsculpting/faq/chevron-right1.png" alt="" class="arw dwn_arw" /></span>
+
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse7" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p class="panel-text">
+                                                    ระหว่างสองสามนาทีแรกในช่วงเริ่มต้น ปกติแล้ว คุณจะรู้สึกเย็นจัด6 ความรู้สึกนี้จะหายไปในไม่ช้า<sup>6</sup> สำหรับหัวแอพพลิเคเตอร์บางชนิด คุณจะมีความรู้สึกเหมือนผิวหนังถูกดึง เนื่องจากมีการใช้การดูดร่วมด้วย<sup>6</sup>
+                                                    <br />
+                                                    <br />
+                                                    หลังจากทำทรีตเมนต์ คุณอาจจะรู้สึกเสียวแปลบ<sup>6</sup> หลังจากจบกระบวนการแล้ว คนไข้จะสามารถกลับไปทำกิจกรรมตามปกติได้<sup>3,4,23</sup> หัวข้อ <a href="%e0%b8%ad%e0%b8%b0%e0%b9%84%e0%b8%a3%e0%b8%84%e0%b8%b7%e0%b8%ad%e0%b8%aa%e0%b8%b4%e0%b9%88%e0%b8%87%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%84%e0%b8%b2%e0%b8%94%e0%b8%ab%e0%b8%a7%e0%b8%b1%e0%b8%87.html">อะไรคือสิ่งที่คาดหวัง</a>&nbsp;จะมีข้อมูลเพิ่มเติมเกี่ยวกับสิ่งที่เกิดขึ้น ก่อน ระหว่าง และหลังจากกระบวนการทำ CoolSculpting<sup>&reg;</sup>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <noscript>
+                                            ระหว่างสองสามนาทีแรกในช่วงเริ่มต้น ปกติแล้ว คุณจะรู้สึกเย็นจัด6 ความรู้สึกนี้จะหายไปในไม่ช้า<sup>6</sup> สำหรับหัวแอพพลิเคเตอร์บางชนิด คุณจะมีความรู้สึกเหมือนผิวหนังถูกดึง เนื่องจากมีการใช้การดูดร่วมด้วย<sup>6</sup>
+                                            <br />
+                                            <br />
+                                            หลังจากทำทรีตเมนต์ คุณอาจจะรู้สึกเสียวแปลบ<sup>6</sup> หลังจากจบกระบวนการแล้ว คนไข้จะสามารถกลับไปทำกิจกรรมตามปกติได้<sup>3,4,23</sup> หัวข้อ <a href="%e0%b8%ad%e0%b8%b0%e0%b9%84%e0%b8%a3%e0%b8%84%e0%b8%b7%e0%b8%ad%e0%b8%aa%e0%b8%b4%e0%b9%88%e0%b8%87%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%84%e0%b8%b2%e0%b8%94%e0%b8%ab%e0%b8%a7%e0%b8%b1%e0%b8%87.html">อะไรคือสิ่งที่คาดหวัง</a>&nbsp;จะมีข้อมูลเพิ่มเติมเกี่ยวกับสิ่งที่เกิดขึ้น ก่อน ระหว่าง และหลังจากกระบวนการทำ CoolSculpting<sup>&reg;</sup>
+                                        </noscript>
+                                    </div>
+                                    <div class="panel panel-default white_bg">
+                                        <div class="panel-heading">
+                                            <h4 aria-level="3" class="panel-title">
+                                                <a data-toggle="collapse" id="8" ng-click="setDeepLink('8');" data-parent="#accordion2" href="#collapse8" aria-expanded="false" onclick="if( $(this).attr('aria-expanded')=='true'){ return; }else{ dataLayer.push({&#39;faqName&#39;:&#39;What should I tell my physician?&#39;,&#39;event&#39;:&#39;faqViewed&#39;}); }">
+
+                                                    ฉันควรจะบอกอะไรกับแพทย์ของฉัน?
+
+                                                    <span><img src="/Images/blank-image.png?h=24&amp;w=24&amp;la=th" src="#" onload="InitialImageload(this)" loading="lazy" device="all" datasrc="/-/media/project/coolsculpting/faq/chevron-right1.png" alt="" class="arw dwn_arw" /></span>
+
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse8" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p class="panel-text">
+                                                    ระหว่างการให้คำปรึกษาครั้งแรก แพทย์จะซักถามประวัติทางการแพทย์ของคุณเพื่อพิจารณาว่า CoolSculpting&reg; เป็นกระบวนการที่เหมาะกับคุณหรือไม่ เป็นเรื่องสำคัญที่จะต้องแจ้งให้แพทย์ทราบ หากคุณเป็นโรค Cryoglobulinaemia, Cold Agglutinin Disease หรือ Paroxysmal Cold Haemoglobinuria เนื่องจากคุณจะไม่สามารถทำ CoolSculpting<sup>&reg;</sup> ได้หากท่านมีโรคดังกล่าว<sup>6</sup>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <noscript>
+                                            ระหว่างการให้คำปรึกษาครั้งแรก แพทย์จะซักถามประวัติทางการแพทย์ของคุณเพื่อพิจารณาว่า CoolSculpting&reg; เป็นกระบวนการที่เหมาะกับคุณหรือไม่ เป็นเรื่องสำคัญที่จะต้องแจ้งให้แพทย์ทราบ หากคุณเป็นโรค Cryoglobulinaemia, Cold Agglutinin Disease หรือ Paroxysmal Cold Haemoglobinuria เนื่องจากคุณจะไม่สามารถทำ CoolSculpting<sup>&reg;</sup> ได้หากท่านมีโรคดังกล่าว<sup>6</sup>
+                                        </noscript>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div id="qlink3">
+                                <a href="/th/คำถามที่พบบ่อย-ประเภท3?cid=3" Class="faq-heading-link">
+                                    <h3 aria-level="2" class="faq_heading">
+                                        หลังจากทำทรีตเมนต์
+                                    </h3>
+                                </a>
+                                <div class="panel-group" id="accordion3">
+                                    <div class="panel panel-default white_bg">
+                                        <div class="panel-heading">
+                                            <h4 aria-level="3" class="panel-title">
+                                                <a data-toggle="collapse" id="10" ng-click="setDeepLink('10');" data-parent="#accordion3" href="#collapse9" aria-expanded="false" onclick="if( $(this).attr('aria-expanded')=='true'){ return; }else{ dataLayer.push({&#39;faqName&#39;:&#39;Are there any side effects? &#39;,&#39;event&#39;:&#39;faqViewed&#39;}); }">
+
+                                                    มีผลข้างเคียงอื่นๆ หรือไม่?
+
+                                                    <span><img src="/Images/blank-image.png?h=24&amp;w=24&amp;la=th" src="#" onload="InitialImageload(this)" loading="lazy" device="all" datasrc="/-/media/project/coolsculpting/faq/chevron-right1.png" alt="" class="arw dwn_arw" /></span>
+
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse9" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p class="panel-text">
+                                                    ระหว่างกระบวนการ คุณอาจจะมีความรู้สึกว่าถูกดึง ถูกดูด จิก โดนความเย็นจัด เสียวแปลบ ถูกต่อย คัน และเป็นตะคริวตรงบริเวณที่ทำทรีตเมนต์<sup>6</sup> ความรู้สึกเหล่านี้อาจลดลง เนื่องจากบริเวณดังกล่าวถูกทำให้ชา<sup>23</sup>
+                                                    <br /><br />
+                                                    หลังจากเสร็จสิ้นกระบวนการ ผลข้างเคียงที่พบ ได้แก่ รอยแดง, บวม, รอยด่าง, รอยช้ำ, ความกระชับ, ความเสียว, ถูกต่อย, ความนุ่มนิ่ม, ตะคริว, ปวด, คัน, ผิวหนังไวต่อความรู้สึก และความรู้สึกชา<sup>6</sup> ความรู้สึกชาอาจเป็นอยู่ได้นานหลายสัปดาห์<sup>6</sup> ความรู้สึกตื้อๆ หลังคออาจเกิดขึ้นหากมีการทำทรีตเมนต์บริเวณใต้คาง<sup>6</sup> ผลกระทบเหล่านี้จะเป็นอยู่ชั่วคราวและจะค่อยๆ หายไปในเวลา 14 วัน<sup>6</sup>
+                                                    <br /><br />
+                                                    กระนั้นก็ตาม อาจจะมีผลข้างเคียงบางอย่างที่พบได้ เช่น มีการเพิ่มขึ้นของเซลล์ไขมัน (Paradoxical hyperplasia), อาการปวดอย่างมากในภายหลัง, ผิวไหม้จากความเย็น, อาการหน้ามืดเป็นลม, การแข็งตัวของเนื้อเยื่อใต้ผิวหนัง, สีผิวเข้มขึ้น และไส้เลื่อน อาจเกิดขึ้นได้เช่นกัน<sup>6</sup>
+                                                    <br /><br />
+                                                    กระบวนการ CoolSculpting<sup>®</sup> ไม่สามารถใช้ได้กับทุกคน<sup>6</sup> คุณไม่สามารถทำทรีตเมนต์ CoolSculpting<sup>®</sup> ได้ หากคุณเป็นโรค cryoglobulinaemia, cold agglutinin หรือ paroxysmal cold haemoglobinuria<sup>6</sup> กระบวนการ CoolSculpting<sup>®</sup> ไม่ใช่วิธีการรักษาผู้เป็นโรคอ้วน<sup>3</sup>
+                                                    <br /><br />
+                                                    คุณควรปรึกษาแพทย์ของคุณว่ากระบวนการ CoolSculpting<sup>®</sup> เป็นวิธีที่เหมาะกับคุณหรือไม่ เช่นเดียวกับการเลือกใช้กระบวนการทางการแพทย์อื่นๆ
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <noscript>
+                                            ระหว่างกระบวนการ คุณอาจจะมีความรู้สึกว่าถูกดึง ถูกดูด จิก โดนความเย็นจัด เสียวแปลบ ถูกต่อย คัน และเป็นตะคริวตรงบริเวณที่ทำทรีตเมนต์<sup>6</sup> ความรู้สึกเหล่านี้อาจลดลง เนื่องจากบริเวณดังกล่าวถูกทำให้ชา<sup>23</sup>
+                                            <br /><br />
+                                            หลังจากเสร็จสิ้นกระบวนการ ผลข้างเคียงที่พบ ได้แก่ รอยแดง, บวม, รอยด่าง, รอยช้ำ, ความกระชับ, ความเสียว, ถูกต่อย, ความนุ่มนิ่ม, ตะคริว, ปวด, คัน, ผิวหนังไวต่อความรู้สึก และความรู้สึกชา<sup>6</sup> ความรู้สึกชาอาจเป็นอยู่ได้นานหลายสัปดาห์<sup>6</sup> ความรู้สึกตื้อๆ หลังคออาจเกิดขึ้นหากมีการทำทรีตเมนต์บริเวณใต้คาง<sup>6</sup> ผลกระทบเหล่านี้จะเป็นอยู่ชั่วคราวและจะค่อยๆ หายไปในเวลา 14 วัน<sup>6</sup>
+                                            <br /><br />
+                                            กระนั้นก็ตาม อาจจะมีผลข้างเคียงบางอย่างที่พบได้ เช่น มีการเพิ่มขึ้นของเซลล์ไขมัน (Paradoxical hyperplasia), อาการปวดอย่างมากในภายหลัง, ผิวไหม้จากความเย็น, อาการหน้ามืดเป็นลม, การแข็งตัวของเนื้อเยื่อใต้ผิวหนัง, สีผิวเข้มขึ้น และไส้เลื่อน อาจเกิดขึ้นได้เช่นกัน<sup>6</sup>
+                                            <br /><br />
+                                            กระบวนการ CoolSculpting<sup>®</sup> ไม่สามารถใช้ได้กับทุกคน<sup>6</sup> คุณไม่สามารถทำทรีตเมนต์ CoolSculpting<sup>®</sup> ได้ หากคุณเป็นโรค cryoglobulinaemia, cold agglutinin หรือ paroxysmal cold haemoglobinuria<sup>6</sup> กระบวนการ CoolSculpting<sup>®</sup> ไม่ใช่วิธีการรักษาผู้เป็นโรคอ้วน<sup>3</sup>
+                                            <br /><br />
+                                            คุณควรปรึกษาแพทย์ของคุณว่ากระบวนการ CoolSculpting<sup>®</sup> เป็นวิธีที่เหมาะกับคุณหรือไม่ เช่นเดียวกับการเลือกใช้กระบวนการทางการแพทย์อื่นๆ
+                                        </noscript>
+                                    </div>
+                                    <div class="panel panel-default white_bg">
+                                        <div class="panel-heading">
+                                            <h4 aria-level="3" class="panel-title">
+                                                <a data-toggle="collapse" id="11" ng-click="setDeepLink('11');" data-parent="#accordion3" href="#collapse10" aria-expanded="false" onclick="if( $(this).attr('aria-expanded')=='true'){ return; }else{ dataLayer.push({&#39;faqName&#39;:&#39;Can I return to normal activities after my treatment?&#39;,&#39;event&#39;:&#39;faqViewed&#39;}); }">
+
+                                                    หลังจากทำรักษา ฉันจะกลับมาทำกิจกรรมตามปกติได้หรือไม่?
+
+                                                    <span><img src="/Images/blank-image.png?h=24&amp;w=24&amp;la=th" src="#" onload="InitialImageload(this)" loading="lazy" device="all" datasrc="/-/media/project/coolsculpting/faq/chevron-right1.png" alt="" class="arw dwn_arw" /></span>
+
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse10" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p class="panel-text">
+                                                    กระบวนการ CoolSculpting<sup>®</sup> เป็นกระบวนการที่ไม่มีการทำศัลยกรรม<sup>1</sup> ดังนั้น คุณจะสามารถกลับไปทำกิจกรรมตามปกติของคุณได้<sup>3,4,23</sup> บ่อยครั้งที่คนไข้สามารถกลับไปทำงานได้หลังจากทำทรีตเมนต์ CoolSculpting<sup>®</sup> แล้ว<sup>3</sup> อย่างไรก็ตาม จะแตกต่างกันไปตามแต่ละบุคคล และอาจขึ้นอยู่กับบริเวณที่ทำทรีตเมนต์ด้วย<sup>3</sup>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <noscript>
+                                            กระบวนการ CoolSculpting<sup>®</sup> เป็นกระบวนการที่ไม่มีการทำศัลยกรรม<sup>1</sup> ดังนั้น คุณจะสามารถกลับไปทำกิจกรรมตามปกติของคุณได้<sup>3,4,23</sup> บ่อยครั้งที่คนไข้สามารถกลับไปทำงานได้หลังจากทำทรีตเมนต์ CoolSculpting<sup>®</sup> แล้ว<sup>3</sup> อย่างไรก็ตาม จะแตกต่างกันไปตามแต่ละบุคคล และอาจขึ้นอยู่กับบริเวณที่ทำทรีตเมนต์ด้วย<sup>3</sup>
+                                        </noscript>
+                                    </div>
+                                    <div class="panel panel-default white_bg">
+                                        <div class="panel-heading">
+                                            <h4 aria-level="3" class="panel-title">
+                                                <a data-toggle="collapse" id="12" ng-click="setDeepLink('12');" data-parent="#accordion3" href="#collapse11" aria-expanded="false" onclick="if( $(this).attr('aria-expanded')=='true'){ return; }else{ dataLayer.push({&#39;faqName&#39;:&#39;I&#39;ve had the treatment procedure. Now what?&#39;,&#39;event&#39;:&#39;faqViewed&#39;}); }">
+
+                                                    ฉันเข้ารับการทำ การกำจัดไขมันด้วยการแช่แข็ง เรียบร้อยแล้ว ตอนนี้ จะต้องทำอย่างไรต่อ?
+
+                                                    <span><img src="/Images/blank-image.png?h=24&amp;w=24&amp;la=th" src="#" onload="InitialImageload(this)" loading="lazy" device="all" datasrc="/-/media/project/coolsculpting/faq/chevron-right1.png" alt="" class="arw dwn_arw" /></span>
+
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse11" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p class="panel-text">
+                                                    ตรวจสอบให้แน่ใจว่าได้มีการนัดหมายประเมินผลกับแพทย์ CoolSculpting<sup>&reg;</sup> ของคุณเพื่อทบทวนผลลัพธ์
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <noscript>
+                                            ตรวจสอบให้แน่ใจว่าได้มีการนัดหมายประเมินผลกับแพทย์ CoolSculpting<sup>&reg;</sup> ของคุณเพื่อทบทวนผลลัพธ์
+                                        </noscript>
+                                    </div>
+                                    <div class="panel panel-default white_bg">
+                                        <div class="panel-heading">
+                                            <h4 aria-level="3" class="panel-title">
+                                                <a data-toggle="collapse" id="13" ng-click="setDeepLink('13');" data-parent="#accordion3" href="#collapse12" aria-expanded="false" onclick="if( $(this).attr('aria-expanded')=='true'){ return; }else{ dataLayer.push({&#39;faqName&#39;:&#39;When will I see results?&#39;,&#39;event&#39;:&#39;faqViewed&#39;}); }">
+
+                                                    ฉันจะเห็นผลเมื่อไหร่?
+
+                                                    <span><img src="/Images/blank-image.png?h=24&amp;w=24&amp;la=th" src="#" onload="InitialImageload(this)" loading="lazy" device="all" datasrc="/-/media/project/coolsculpting/faq/chevron-right1.png" alt="" class="arw dwn_arw" /></span>
+
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse12" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p class="panel-text">
+                                                    คนไข้ส่วนใหญ่จะเห็นผลในระยะเวลา 2 ถึง 6 เดือน<sup>1,2,7,8,10-16</sup> หลังจากทำทรีตเมนต์ เซลล์ไขมันที่ตายแล้วจะยังคงถูกกำจัดไปเรื่อยๆ*<sup>19,20</sup> ประมาณ 4 ถึง 6 เดือนหลังจากทำทรีตเมนต์<sup>22,24</sup>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <noscript>
+                                            คนไข้ส่วนใหญ่จะเห็นผลในระยะเวลา 2 ถึง 6 เดือน<sup>1,2,7,8,10-16</sup> หลังจากทำทรีตเมนต์ เซลล์ไขมันที่ตายแล้วจะยังคงถูกกำจัดไปเรื่อยๆ*<sup>19,20</sup> ประมาณ 4 ถึง 6 เดือนหลังจากทำทรีตเมนต์<sup>22,24</sup>
+                                        </noscript>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div id="qlink4">
+                                <a href="/th/คำถามที่พบบ่อย-ประเภท4?cid=4" Class="faq-heading-link">
+                                    <h3 aria-level="2" class="faq_heading">
+                                        อื่นๆ
+                                    </h3>
+                                </a>
+                                <div class="panel-group" id="accordion4">
+                                    <div class="panel panel-default white_bg">
+                                        <div class="panel-heading">
+                                            <h4 aria-level="3" class="panel-title">
+                                                <a data-toggle="collapse" id="14" ng-click="setDeepLink('14');" data-parent="#accordion4" href="#collapse13" aria-expanded="false" onclick="if( $(this).attr('aria-expanded')=='true'){ return; }else{ dataLayer.push({&#39;faqName&#39;:&#39;How much does the procedure could cost?&#39;,&#39;event&#39;:&#39;faqViewed&#39;}); }">
+
+                                                    กระบวนการ CoolSculpting® มีค่าใช้จ่ายเท่าไหร่?
+
+                                                    <span><img src="/Images/blank-image.png?h=24&amp;w=24&amp;la=th" src="#" onload="InitialImageload(this)" loading="lazy" device="all" datasrc="/-/media/project/coolsculpting/faq/chevron-right1.png" alt="" class="arw dwn_arw" /></span>
+
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse13" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p class="panel-text">
+                                                    ราคาของการทำ CoolSculpting<sup>®</sup> จะแตกต่างกันไปตามบริเวณที่ต้องการทำทรีตเมนต์ จำนวนครั้งที่ต้องทำทรีตเมนต์ และเป้าหมายสูงสุดของคุณ
+                                                    <br /><br />
+                                                    กำหนดแผนการทำทรีตเมนต์ร่วมกับแพทย์ CoolSculpting<sup>®</sup> ของคุณ ซึ่งเป็นแผนที่ปรับให้เหมาะกับรูปร่างของคุณ เป้าหมายของคุณ และงบประมาณของคุณ
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <noscript>
+                                            ราคาของการทำ CoolSculpting<sup>®</sup> จะแตกต่างกันไปตามบริเวณที่ต้องการทำทรีตเมนต์ จำนวนครั้งที่ต้องทำทรีตเมนต์ และเป้าหมายสูงสุดของคุณ
+                                            <br /><br />
+                                            กำหนดแผนการทำทรีตเมนต์ร่วมกับแพทย์ CoolSculpting<sup>®</sup> ของคุณ ซึ่งเป็นแผนที่ปรับให้เหมาะกับรูปร่างของคุณ เป้าหมายของคุณ และงบประมาณของคุณ
+                                        </noscript>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section links class="ng-scope">
+                    <div class="link-container">
+                        <ul class="block-inner">
+                            <li class="action-block col-md-6 col-sm-12">
+                                <div class="box-toreactLink action-image">
+                                    <img src="/Images/blank-image.png?la=th" dataheight="126" src="" onload="InitialImageload(this)" loading="lazy" device="all" datasrc="/-/media/project/coolsculpting/navigation/GettyImages-56956677-cropped.jpg" alt="" />
+                                </div>
+                                <div class="box-dynamicLink action-text">
+
+                                    <a href="/th/ค้นหาคลินิก" onclick="dataLayer.push({'buttonName': 'find a clinic','event': 'pageBottomButtonClicked'});"> <span class="link-text">จะรอทำไม? ค้นหาคลินิกที่ใกล้ที่สุดวันนี้</span>
+                                        <span class="link-nav"><img src="/Images/blank-image.png?la=th" dataheight="48" src="" onload="InitialImageload(this)" loading="lazy" device="all" datasrc="/-/media/project/coolsculpting/navigation/circle-arrow _lg.png" alt="" /></span>
+                                    </a>
+                                    <div class="courtesylink-text"></div>
+                                </div>
+
+                            </li>
+                            <li class="action-block col-md-6 col-sm-12">
+                                <div class="box-toreactLink action-image">
+                                    <img src="/Images/blank-image.png?la=th" dataheight="256" src="#" onload="InitialImageload(this)" loading="lazy" device="all" datasrc="/-/media/project/coolsculpting/whattoexpect/lady blue background.png" alt="" />
+                                </div>
+                                <div class="box-dynamicLink action-text">
+
+                                    <a href="/th/หลักการทำงาน" onclick="dataLayer.push({'buttonName': 'Before and after','event': 'pageBottomButtonClicked'});"> <span class="link-text"> ดูข้อมูลเพิ่มเติมเกี่ยวกับการทำงานของ CoolSculpting<sup>®</sup></span>
+                                        <span class="link-nav"><img src="/Images/blank-image.png?la=th" dataheight="48" src="#" onload="InitialImageload(this)" loading="lazy" device="all" datasrc="/-/media/project/coolsculpting/navigation/circle-arrow _lg.png" alt="" /></span>
+                                    </a>
+                                    <div class="courtesylink-text"></div>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section links class="ng-scope">
+                    <div class="link-container">
+                        <ul class="block-inner">
+
+                        </ul>
+                    </div>
+                </section>
+            </section>
+
+
+        </main>
+
+        <!--Start: Country Selection-->
+        <section country-selection class="ng-scope">
+
+        </section>
+        <!--End: Country Selection-->
+        <!-------------------------------------------------------------------------------------->
+        <!--Start: Footer Section-->
+        <section footer class="ng-scope">
+            <footer class="footer-section" role="contentinfo">
+                <div class="clinic-loc">
+                    <div class="block-inner">
+                        <!--Skip find a clinic for mea region sites non-veeva clinic-->
+
+
+                        <form class="form-inline ng-pristine ng-valid">
+
+                            <label for="footerSearch" class="label-clinic">ค้นหาคลินิก</label>
+                            <div class="input-group" role="search">
+                                <input type="text" id="footerSearch" data-nav="findaclinic" ng-keypress="searchftrClinic($event);" class="find-clinic-input form-control search-loc" placeholder="ป้อนชื่อเมืองหรือรหัสไปรษณีย์" autocomplete="off">
+
+                                <a href="/th/ค้นหาคลินิก" class="map-pin-container pin-nav" target="_blank" role="button" ng-click="footerLocSearch($event);"><img src="/-/media/project/coolsculpting/findclinic/icon-searchcfd3.png?h=24&amp;w=24&amp;la=th&amp;hash=3C5413998B0D5DF2B2EB77ED6E01D7D366AAE51B" class="v-center" alt="ค้นหา" /></a>
+
+                            </div>
+
+
+                            <div class="hidden">
+                                <div id="Apigeolocationerr">ข้อผิดพลาดในการโยกย้าย API</div>
+                            </div>
+                            <div class="modal fade" id="footerErrorModal" role="dialog" style="display: none;">
+                                <div class="modal-dialog">
+                                    <!-- Modal content-->
+                                    <div class="modal-content" style="text-align: left;">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">×</button>
+                                            <h4 class="modal-title">ความผิดพลาด</h4>
+                                        </div>
+                                        <div class="modal-body body-style1">โปรดป้อนเมืองที่ถูกต้องหรือรหัสไปรษณีย์</div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">ปิด</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </form>
+
+
+                    </div>
+                </div>
+                <div class="footer-inner clearfix">
+                    <div class="block-inner">
+                        <div class="footer-sec2">
+                            <a href="/th" class="ws-logo"><img src="/Images/blank-image.png?la=th" dataheight="0" src="" onload="InitialImageload(this)" loading="lazy" device="all" datasrc="/-/media/project/coolsculpting/logo/Coolsculpting_logo_new.svg" alt="" /></a>
+                            <ul class="social-icons">
+                            </ul>
+                            <a href="https://www.allergan.com/" class="ws-logo" target="_blank"><img src="/Images/blank-image.png?la=th" dataheight="42" src="" onload="InitialImageload(this)" loading="lazy" device="all" datasrc="/-/media/project/coolsculpting/homepage/webp/AllerganAesthetics_logo_black.png" alt="" /> <span class="sr-only"></span>
+                            </a>
+                            <p class="footer-logo-info">
+                                <style>
+                                    .footer-section .footer-inner.unbranded-footer .footer-sec2 {
+                                        display: block !important;
+                                    }
+                                </style>
+                            </p>
+
+                        </div>
+                        <div class="footer-sec1">
+                            <div class="sec-inner section-links">
+                                <ul class="footer-links">
+                                    <li>
+                                        <a href="https://privacy.abbvie/privacy-policies/thailand-th-privacy-notice.html" Class="icon-link" aria-label="นโยบายความเป็นส่วนตัว​" target="_blank">นโยบายความเป็นส่วนตัว</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.abbvie.com/terms-of-use.html" Class="icon-link" aria-label="ระยะเวลาและเงื่อนไข" target="_blank">ข้อตกลงและเงื่อนไข</a>
+                                    </li>
+                                    <li>
+                                        <a href="/th/คำจำกัดสิทธิความรับผิดชอบ" aria-label="คำจำกัดสิทธิความรับผิดชอบ" Class="icon-link">คำจำกัดสิทธิความรับผิดชอบ</a>
+                                    </li>
+                                    <li>
+                                        <a href="/th/แผนผังเว็บไซต์" aria-label="แผนผังเว็บไซต์" Class="icon-link">แผนผังเว็บไซต์</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="ot-sdk-show-settings" Class="icon-link" aria-label="" title="Overridden by OneTrust">การตั้งค่าคุกกี้</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div class="sec-inner country-select clearfix">
+                                <ul class="social-icons">
+                                </ul>
+
+                                <p class="info-text">ไซต์นี้จัดทำขึ้นสำหรับผู้เข้าชมในประเทศไทยเท่านั้น</p>
+
+                            </div>
+                        </div>
+
+                        <div class="ism-footer-note col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+
+                                <div class="col-xs-12 col-sm-12 hidden-md hidden-lg footer-zinc info-extra">
+                                    <div class="row">
+                                        <p>ฆพ. 1173/2563​ <br />
+                                            Date of preparation: September 2020​</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-10 col-sm-12 col-xs-12 footer-text info-extra">
+                                    <p>
+                                    <p>หากเกิดเหตุการณ์ไม่พึงประสงค์ ให้รายงานไปยังหน่วยงานที่มีหน้าที่ควบคุมดูแลในพื้นที่ของคุณ และสำนักงาน Allergan <to>*ข้อมูลจากการเจาะลึกในเรื่องการสลายไขมันโดยใช้ความเย็น (CoolSculpting&reg;) โดยใช้โมเดลหมู<sup>19,20</sup> &dagger; แบบสำรวจของสมาคมศัลยกรรมผิวหนังอเมริกา (ASDS) ในเรื่องกระบวนการเกี่ยวกับผิวหนัง ข้อมูลได้รับการเก็บรวบรวมจากประสบการณ์ในปี 2016 และนำมาสรุปเพื่อนำเสนอต่อสมาชิกทั้งหมดของ ASDS กระบวนการ CoolSculpting&reg; 177,000 กระบวนการ จากกระบวนการลดสัดส่วนทั้งหมด 387,000 กระบวนการ<sup>21</sup></to>
+                                    </p>
+                                    <br />
+                                    <p><strong>References:</strong></p>
+                                    <p class="p1" style="color: #000000; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;">1. Kilmer SL, et al. Lasers Surg Med. 2016; 48:3-13.</p>
+                                    <p>2. Kilmer SL. Lasers Surg Med. 2017. 49:63-68.</p>
+                                    <p>3. Avram MM &amp; Rosemary SH. Lasers Surg Med. 2009; 41:703-708.</p>
+                                    <p>4. Krueger N, et al. Clin Cos Invest Derm. 2014; 7:201-205.</p>
+                                    <p>5. Schlessinger J, et al. Skin Med. 2013; 11:27-31.</p>
+                                    <p>6. CoolSculpting&reg; system user manual (BRZ-101-TUM-EN2-J). December 2016.</p>
+                                    <p>7. Shek SY et al. Lasers Surg Med. 2012; 44:125-130.</p>
+                                    <p>8. Garibayan L, et al. Lasers Surg Med. 2014; 46:75-80.</p>
+                                    <p>9. Bernstein EF &amp; Bloom JD. JAMA Facial Plastic Surg. 2017; doi:10.1001/jamafacial.2017.0102.</p>
+                                    <p>10. Sasaki GH, et al. Aesthetic Surg J. 2014; 34:420-431.</p>
+                                    <p>11. Wanitphakdeedecha R, et al. Lasers Med Sci. 2015; 30:2165-2169.</p>
+                                    <p>12. Lee SJ, et al. J Cos Laser Ther. 2016; 18:126-129.</p>
+                                    <p>13. Carruthers JD, et al. Dermatol Surg. 2017; 43:940-949.</p>
+                                    <p>14. Zelickson BD, et al. Lasers Surg Med. 2015; 47:120-27.</p>
+                                    <p>15. Boey GE &amp; Wasilenchuck JL. Dermatol Surg. 2014; 0:1-6.</p>
+                                    <p>16. Stevens WG &amp; Bachelor EP. Aesthetic Surg J. 2015; 35:66-71.</p>
+                                    <p>17. FDA. Indications for Use CoolSculpting&reg; System. November 2017. Available at: https://www.accessdata.fda.gov/cdrh_docs/pdf17/K172144.pdf (accessed February 2018).</p>
+                                    <p>18. Klein KB, et al. Lasers Surg Med. 2009; 41:785-790.</p>
+                                    <p>19. Zelickson B, et al. Am Soc Dermatol Surg. 2009; 35:1462-1470.</p>
+                                    <p>20. Manstein D, et al. Lasers Surg Med. 2008; 40:595-604.</p>
+                                    <p>21. American Society for Dermatologic Surgery (ASDS). Consumer Survey on Cosmetic Dermatologic Procedures 2016. Available at: https://www.asds.net/uploadedimages/procedures_infographic_2016_FINAL.jpg (accessed February 2018).</p>
+                                    <p>22. Boey GE &amp; Wasilenchuk JL. Lasers Surg Med. 2014; 46:20-26.</p>
+                                    <p>23. Nelson AA &amp; Avram MM. Fat removal: Invasive and noninvasive body contouring. 1st Edition. 2015. Chichester, UK: John Wiley &amp; Sons, Ltd.</p>
+                                    <p>24. Coleman SR, et al. Aesth Plast Surg. 2009; 33(44):882-888.</p>
+                                    </p>
+                                </div>
+
+                                <div class="col-md-2 hidden-sm hidden-xs footer-zinc info-extra">
+                                    <p>ฆพ. 1173/2563​ <br />
+                                        Date of preparation: September 2020​</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </footer>
+        </section>
+        <!--End: Footer Section-->
+
+
+    </div>
+
+    <!-- Start PWA Section of Google Light house -->
+    <!-- END PWA Section of Google Light house -->
+    <input name="__RequestVerificationToken" type="hidden" value="Ll3JuNhgFa4C3rhf0YgVGBlTogaN4CL5m08QmwqyisT2UORa2nUPwYUlSiwKw-8Be4Fr_kwC07zkwotZxjFfvu7NviwxFUdXwetPRphYoE01" />
+
+</body>
+
+</html>

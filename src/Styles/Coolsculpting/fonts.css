@@ -1,0 +1,157 @@
+﻿@font-face {
+    font-family: 'MinionProRegular';
+    src: url('../Fonts/MinionPro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AleoRegular';
+    src: url('../Fonts/Aleo-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AleoBold';
+    src: url('../Fonts/Aleo-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AleoBoldItalic';
+    src: url('../Fonts/Aleo-BoldItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AleoBoldItalic';
+    src: url('../Fonts/Aleo-BoldItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AleoLight';
+    src: url('../Fonts/Aleo-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../Fonts/AvenirNext-Regular.otf') format('opentype'), url('../Fonts/AvenirNext-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AvenirDemi';
+    src: url('../Fonts/AvenirNext-DemiBold.otf') format('opentype'), url('../Fonts/AvenirNext-DemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AvenirIt';
+    src: url('../Fonts/AvenirNext-Italic.otf') format('opentype'), url('../Fonts/AvenirNext-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AvenirBold';
+    src: url('../Fonts/AvenirNext-Bold.otf') format('opentype'), url('../Fonts/AvenirNext-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../Fonts/arial.ttf') format('truetype'), url('../Fonts/arial.woff') format('woff'), url('../Fonts/arial.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RobotoBlack';
+    src: url('../Fonts/Roboto-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../Fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'RobotoItalic';
+    src: url('../Fonts/Roboto-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'RobotoLight';
+    src: url('../Fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('../Fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'RobotoMediumItalic';
+    src: url('../Fonts/Roboto-MediumItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../Fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ZillaSlab-Bold';
+    src: url('../Fonts/ZillaSlab-Bold.otf') format('opentype'), url('../Fonts/ZillaSlab-Bold.ttf') format('truetype'), url('../Fonts/ZillaSlab-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ZillaSlab-Light';
+    src: url('../Fonts/ZillaSlab-Light.otf') format('opentype'), url('../Fonts/ZillaSlab-Light.ttf') format('truetype'), url('../Fonts/ZillaSlab-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ZillaSlab-Medium';
+    src: url('../Fonts/ZillaSlab-Medium.otf') format('opentype'), url('../Fonts/ZillaSlab-Medium.ttf') format('truetype'), url('../Fonts/ZillaSlab-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ZillaSlab';
+    src: url('../Fonts/ZillaSlab-Regular.otf') format('opentype'), url('../Fonts/ZillaSlab-Regular.ttf') format('truetype'), url('../Fonts/ZillaSlab-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

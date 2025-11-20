@@ -1,0 +1,1032 @@
+ /*---------------------blue skin-----------------------*/
+.main-header .nav-menu ul li a {color: #00a4e4;}
+.main-header ul.cta-group li a {background-color: #005cb9;color: #fff; font-size: 24px;}
+.img-hs-container .hs-header h2 {color: #00a4e4 !important;}
+
+section[links] .action-block .action-text{background: #FFF;}
+section[links] .action-block .action-text a {color: #005cb9;}
+section[links] .action-block .courtesylink-text {color: #005cb9;}
+section[links] {
+    margin-top: 25px;
+}
+
+section[footer] .footer-section .clinic-loc {
+    border: 0;
+    background-color: #005cb9;
+}
+section[footer] .footer-section .clinic-loc .label-clinic {color: #FFF;}
+@media only screen and (min-width: 992px)
+{
+section[footer] .footer-section .clinic-loc .input-group {margin-left: 10px;}
+}
+section[footer] .footer-section .clinic-loc .input-group .find-clinic-input{padding-left: 5px;}
+section[footer] .footer-section .clinic-loc a.map-pin-container.pin-nav { border-radius: 0; right: 0; bottom: 0;
+    top: 0; height: 46px; width: 46px; background-color: #00a4e4;}
+
+section[featurecomp]{background-color: #00a4e4;    color: #fff;}
+section[featurecomp] .featureComp_heading {color: #fff;}
+section[featurecomp] .featurecomp_container .item .info-header,
+section[featurecomp] .featurecomp_container .item .fc_p,
+section[featurecomp] .featurecomp_container .item .fc_pa{color: #fff;}
+
+section[video-panel] .video-container {background-color: #00a4e4;    color: #fff; padding-top: 30px;}
+section[video-panel] .video-container .dialog-box{background-color: #00a4e4;    color: #fff;}
+section[video-panel] .video-container .dialog-box h2{color: #fff;}
+section[video-panel] .video-container .dialog-box p{color: #fff;}
+/*--------------------------------------------*/
+
+/*---------------full width-------------------*/
+.img-hs-container .hs-header { max-width: 540px;}
+
+/*full color*/
+section[page-overview] .overview-container { background-color: #005eb8; margin:0;}
+section[page-overview] .overview-inner {  padding: 50PX;}
+section[page-overview] .overview-inner.feature-new .panel-bl{background-color: #00a4e4;}
+section[page-overview] .overview-inner.feature-new { padding: 0 !important;}
+
+
+/*full color and width*/
+.overview-container .block-inner { max-width: 100%; padding: 0px 0px; margin: 0px auto;}
+.overview-inner .section-text .text-caret{display: none;}
+
+/*--------------------------------------------*/
+#clinic-search .clinic-wrapper-inner{background-color: #00a4e4;}
+#clinic-search .clinic-wrapper-inner .map-pin-container {border-radius: 0;right: 0;bottom: 0;top: 0; height: 48px; width: 48px;   background-color: #00a4e4;}
+.clinic-wrapper .clinic-wrapper-inner .clinic-search .search-wrap .search-loc {  background: #FFF;  border: 0;  padding-left: 5px;}
+.clinic-wrapper .clinic-wrapper-inner.btn-cs { border-radius: 0px;}
+.clinic-wrapper-inner .clinic-header .clinic-title { color: #FFF;}
+.clinic-wrapper-inner .clinic-header .clinic-desc {color: #FFF;}
+.clinic-wrapper .clinic-wrapper-inner .cl-anchors .anchor-title {color: #FFF;}
+.clinic-wrapper .clinic-wrapper-inner .cl-anchors .cl-links {color: #FFF;}
+.clinicInfo-wrapper{background-color: #00a4e4;}
+.clinic-wrapper .allclinics-lnk span {color: #fff;}
+.FindAClinic .clinic-wrapper .clinic-wrapper-inner .clinic-search .search-wrap .btn-cs {
+    position: relative;
+    border-radius: 0;
+}
+
+.FindAClinic #clinic-search .clinic-wrapper-inner .map-pin-container {
+    border-radius: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 48px;
+    width: 48px;
+    background-color: #005eb8;
+} 
+ 
+
+
+/*---------------------what-is-coolsculpting-----------------------*/
+.WhatIsCoolsculpting section:nth-child(2) { background-color: #00a4e4 !important; color: #fff;}
+.WhatIsCoolsculpting section:nth-child(2) .featurecomp_container .feature-box-title .featureComp_heading{color: #fff;}
+.WhatIsCoolsculpting section:nth-child(2) .featurecomp_container .featureBox-two .item .info-header {
+        color: #fff;
+    }
+.WhatIsCoolsculpting section:nth-child(2) .featurecomp_container .featureBox-two .item .fc_p {
+        color: #fff;
+    }
+.WhatIsCoolsculpting section:nth-child(4) .overview-container {
+    max-width: 100%;
+    padding: 0px 0px;
+    margin: 0px auto;
+}
+.WhatIsCoolsculpting section:nth-child(4) .overview-container .block-inner {
+        max-width: 100%;
+        padding: 0;
+    }
+.WhatIsCoolsculpting section:nth-child(4) .overview-container {
+    background-color: #005eb8;
+}
+.WhatIsCoolsculpting section:nth-child(4) .overview-container .overview-inner {
+        padding: 0PX;
+    }
+
+/*---------------------what-to-expect-----------------------*/
+.WhattoExpect main section section:nth-child(2) .overview-container {
+    max-width: 100%;
+    padding: 0px 0px;
+    margin: 0px auto;
+}
+    .WhattoExpect main section section:nth-child(2) .overview-container .block-inner {
+        max-width: 100%;
+        padding: 0;
+    }
+    .WhattoExpect main section section:nth-child(2) .overview-container .overview-inner {
+        padding: 0PX;
+    }
+.WhattoExpect section:nth-child(3) {
+    background-color: #00a4e4 !important;
+    color: #fff;
+}
+    .WhattoExpect section:nth-child(3) .featurecomp_container .feature-box-title .featureComp_heading {
+        color: #fff;
+    }
+    .WhattoExpect section:nth-child(3) .featurecomp_container .featureBox-two .item .info-header {
+        color: #fff;
+    }
+    .WhattoExpect section:nth-child(3) .featurecomp_container .featureBox-two .item .fc_p,
+    .WhattoExpect section:nth-child(3) .featurecomp_container .featureBox-two .item .fc_pa {
+        color: #fff;
+    }
+.WhattoExpect main section section:nth-child(4) .overview-container {
+    max-width: 100%;
+    padding: 0px 0px;
+    margin: 0px auto;
+}
+
+    .WhattoExpect main section section:nth-child(4) .overview-container .block-inner {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .WhattoExpect main section section:nth-child(4) .overview-container .overview-inner {
+        padding: 0PX;
+    }
+        .WhattoExpect main section section:nth-child(4) .overview-container .overview-inner.feature-new .panel-bl {
+            background-color: #005eb8;
+        }
+.WhattoExpect main section section:nth-child(5) .faqsec.grey_bg {
+    margin: 0;
+}
+.WhattoExpect main section section:nth-child(6) .overview-container {
+    max-width: 100%;
+    padding: 0px 0px;
+    margin: 0px auto;
+}
+    .WhattoExpect main section section:nth-child(6) .overview-container .block-inner {
+        max-width: 100%;
+        padding: 0;
+    }
+.WhattoExpect main section section:nth-child(6) .overview-container .overview-inner {
+    padding: 0PX;
+}
+       
+
+/*---------------------how-it-works-----------------------*/
+.HowitWorks section:nth-child(2) .featurecomp_container {
+    background-color: #005eb8 !important;
+    color: #fff;
+}
+    .HowitWorks section:nth-child(2) .featurecomp_container .feature-box-title .featureComp_heading {
+        color: #fff;
+    }
+    .HowitWorks section:nth-child(2) .featurecomp_container .feature-box-content .item .info-header {
+        color: #fff;
+    }
+    .HowitWorks section:nth-child(2) .featurecomp_container .feature-box-content .item .fc_p,
+    .HowitWorks section:nth-child(2) .featurecomp_container .feature-box-content .item .fc_pa {
+        color: #fff;
+    }
+    .HowitWorks section:nth-child(2) .featurecomp_container .arrow-up {
+        display: none;
+    }
+.HowitWorks section:nth-child(3) .video-container {
+    background: #00a4e4;
+}
+    .HowitWorks section:nth-child(3) .video-container .dialog-box {
+        background: #00a4e4;
+    }
+        .HowitWorks section:nth-child(3) .video-container .dialog-box h2,
+        .HowitWorks section:nth-child(3) .video-container .dialog-box p {
+            color: #fff;
+        }
+.HowitWorks section:nth-child(4) .overview-inner .panel-wt h3 {
+    color: #005eb8;
+}
+.HowitWorks section:nth-child(4) .overview-container {
+    margin-top:30px;
+}
+.HowitWorks section:nth-child(5) .overview-inner .panel-wt h3 {
+    color: #005eb8;
+}
+.HowitWorks section:nth-child(5) .overview-container  {
+    background-color: #fff;
+}
+
+/*---------------------faq-----------------------*/
+.FAQ section[faq] .white_bg {
+    background-color: #f4f4f4 !important;
+}
+
+/*---------------------before-after-gallery-----------------------*/
+.BeforeAfterGallery section[before-after] .comp-container .opt-inner {
+    background-color: #005eb8;
+    color: #fff;
+}
+.BeforeAfterGallery section[before-after] .comp-container .option-panel .panel-item > span {
+    color: #fff;
+}
+.BeforeAfterGallery section[before-after] .comp-container .option-panel .panel-item.active span {
+    color: #00a4e4;
+}
+.BeforeAfterGallery section[before-after] .comp-container .opt-inner .anim-pointer {
+    display: none;
+}
+.BeforeAfterGallery .quote-wrapper.td-white {
+    background-color: #00a4e4 !important;
+}
+    .BeforeAfterGallery .quote-wrapper.td-white .quote-inner .quote{
+        color: #fff !important;
+    }
+
+.faq_container .panel-title > a {
+    font-family: 'AvenirNextLTW01-Medium';
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.action-block .action-text a .link-text {
+    font-family: 'AvenirNextLTW01-Medium';
+    font-weight: normal;
+}
+.AustraliaCoolsculpting .footer-section .footer-inner .info-text {
+    font-size: 10px;
+    line-height: normal;
+    padding-bottom: 10px;
+}
+
+
+.AustraliaCoolsculpting .footer-section .footer-inner .ism-footer-note .footer-text {
+    width: 100%
+}
+ .AustraliaCoolsculpting .footer-section .footer-inner .ism-footer-note .footer-text p {
+        font-size: 9.5px;
+ }
+.australiafooterintro-container {
+    margin-bottom: 0px;
+}
+
+.blogs section:nth-child(1) .overview-container {
+    background-color: #005eb8;
+    margin: 0;
+}
+
+.blogs section:nth-child(1) .overview-inner {
+    padding: 0PX;
+}
+
+    .blogs section:nth-child(1) .overview-inner .panel-bl {
+        background-color: #00a4e4;
+    }
+
+.bloginner .dialog-box h2 {
+    color: #005eb8;
+}
+
+h3.featureComp_headingrelated {
+    color: #005eb8;
+}
+
+section[title-description] .pagetitle-container {
+    background-color: #00a4e4 !important;
+}
+
+    section[title-description] .pagetitle-container .pagetitle {
+        color: #FFF;
+    }
+
+section[quick-results] .clinic-wrapper-inner {
+    background-color: #00a4e4;
+}
+
+.QuickSearch section[quick-results] .clinicInfo-wrapper {
+    background-color: #fff;
+}
+
+    .QuickSearch section[quick-results] .clinicInfo-wrapper .allclinics-lnk span {
+        color: #005eb8;
+    }
+
+.ClinicsList section[title-description] .pagetitle-container {
+    background-color: #00a4e4 !important;
+}
+
+    .ClinicsList section[title-description] .pagetitle-container .pagetitle {
+        color: #fff;
+    }
+.IndividualClinic section[clinic-search] .clinic-wrapper-inner {
+    background-color: #00a4e4 !important;
+}
+
+
+
+
+@media only screen and (min-width: 992px) {
+    .BeforeAfterGallery section[before-after] .comp-container .selection-pills {
+        text-align: left;
+        width: 70%;
+        margin: auto;
+    }
+
+    .HowitWorks section:nth-child(2) .featurecomp_container .item {
+        width: 25%;
+        padding: 0px 20px;
+        float: left;
+    }
+
+    .HowitWorks section:nth-child(2) .featurecomp_container .featureBox-one .item .featureImg-wrapper {
+        width: 80%;
+        margin: auto;
+    }
+    section[page-overview] .overview-container .block-inner .col-md-7,
+    section[page-overview] .overview-container .block-inner .col-md-5 {
+        width: 50%;
+    }
+  
+    .WhattoExpect section:nth-child(2) .overview-container .block-inner .col-md-7,
+    .WhattoExpect section:nth-child(2) .overview-container .block-inner .col-md-5,
+    .WhattoExpect section:nth-child(4) .overview-container .block-inner .col-md-7,
+    .WhattoExpect section:nth-child(4) .overview-container .block-inner .col-md-5,
+    .WhattoExpect section:nth-child(6) .overview-container .block-inner .col-md-7,
+    .WhattoExpect section:nth-child(6) .overview-container .block-inner .col-md-5 {
+        width: 50%
+    }
+    .HowitWorks section[video-panel] .video-container .video-wrap {
+        max-width: 750px;
+    }
+}
+
+
+
+.HowitWorks section:nth-child(2) .featurecomp_container {
+    padding: 0 0 30px 0;
+}
+
+.WhatIsCoolsculpting .intro-container .dialog-box p {
+    max-width: 860px;
+}
+
+section[image-map] .grey_bg {
+    background: #FFF;
+}
+
+    section[image-map] .grey_bg .hs-header span {
+        background-color: #FFF !important;
+    }
+
+    section[image-map] .grey_bg .hs-header span {
+        background-color: #FFF !important;
+    }
+
+    section[image-map] .grey_bg .hs-content .slide-tab {
+        background-color: #FFF !important;
+    }
+
+    section[image-map] .grey_bg .hs-content .bx-wrapper {
+        background-color: #FFF !important;
+    }
+
+
+.australiafooterintro-container .image-container {
+    width: 100%;
+}
+
+
+
+section[page-overview] .overview-inner {
+    padding: 50PX;
+    padding-bottom: 0;
+}
+
+.Home .block-inner .courtesy-txt {
+    color: #a7a7a7;
+    font-weight: normal;
+    text-align: left;
+    width: 26%;
+    position: absolute;
+    right: -52px;
+    bottom: 0px;
+    font-size: 9px;
+}
+
+.Home .block-inner .courtesy-txt {
+    color: #a7a7a7;
+    font-weight: normal;
+    text-align: left;
+    width: 26%;
+    position: absolute;
+    right: -52px;
+    bottom: 10px;
+    font-size: 9px;
+}
+.AustraliaCoolsculpting .quote-wrapper .quote sup {
+    top: -16px;
+}
+@media screen and (min-width: 991px) {
+    .AustraliaCoolsculpting .footer-section .footer-inner .ism-footer-note .info-extra.footer-zinc {
+        width: 100%;
+        padding: 0;
+        text-align: right;
+    }
+}
+.australiavideo .video-container {
+    background: transparent;
+}
+
+@media only screen and (min-width: 992px) {
+    .australiavideo .video-container .video {
+        height: 355px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .HowitWorks section[video-panel] .video-container .video-wrap .video {
+        height: 425px;
+    }
+}
+.WhatIsCoolsculpting section:nth-child(2) .featurecomp_container .featureBox-two .item:nth-child(1) .featureImg-wrapper img {
+    width: 194px !important;
+}
+
+.WhatIsCoolsculpting section:nth-child(2) .featurecomp_container .featureBox-two .item:nth-child(2) .featureImg-wrapper img {
+    width: 160px !important;
+}
+
+.WhatIsCoolsculpting section:nth-child(2) .featurecomp_container .featureBox-two .item:nth-child(3) .featureImg-wrapper img {
+    width: 176px !important;
+}
+@media only screen and (min-width: 992px) {
+    .Home section:nth-child(4) .overview-container .box-toreact img.hidden-xs.hidden-sm {
+     height: 420px;
+    }
+}
+section[page-overview] .overview-inner {
+    padding: 0 !important;
+}
+
+.australiavideo .video-container {
+    background: #f4f4f4;
+    padding: 25px 15px;
+}
+
+/************ NEW STYLING ***********/
+
+.AustraliaCoolsculpting.HowitWorks section:nth-child(4) {
+    background-color: transparent;
+    margin-bottom: 30px;
+}
+
+.AustraliaCoolsculpting.HowitWorks section:nth-child(4) .featurecomp_container {
+    margin-bottom: 60px;
+}
+
+.AustraliaCoolsculpting.HowitWorks section:nth-child(4) .featurecomp_container .featureBox-two .feature-box-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.AustraliaCoolsculpting.HowitWorks section:nth-child(4) .featurecomp_container .featureBox-two .feature-box-content::before,
+.AustraliaCoolsculpting.HowitWorks section:nth-child(4) .featurecomp_container .featureBox-two .feature-box-content::after {
+    display: none;
+}
+
+.AustraliaCoolsculpting.HowitWorks section:nth-child(4) .featurecomp_container .featureBox-two .item {
+    width: 48%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+}
+.AustraliaCoolsculpting.HowitWorks section:nth-child(4) .featurecomp_container .featureBox-two .item .item-info {
+    margin-bottom: 60px;
+    min-height: 280px;
+}
+
+.AustraliaCoolsculpting.HowitWorks section:nth-child(4) .featurecomp_container .featureBox-two .item .item-info h4 {
+    font-size: 18px;
+    color: #00A9E1;
+    text-align: left;
+    height: 50px !important;
+    margin-bottom: 15px;
+}
+
+.AustraliaCoolsculpting.HowitWorks section:nth-child(4) .featurecomp_container .featureBox-two .item .item-info p {
+    color: #333333;
+    text-align: left;
+    font-size: 16px;
+}
+
+.AustraliaCoolsculpting .footer-section .footer-inner .ism-footer-note .footer-text.info-extra,
+.AustraliaCoolsculpting .footer-section .footer-inner .ism-footer-note .col-md-2.hidden-sm.hidden-xs.footer-zinc.info-extra {
+    width: 50% !important;
+    display: inline-block !important;
+    text-align: left;
+}
+
+.AustraliaCoolsculpting .footer-section .footer-inner .ism-footer-note .footer-text.info-extra p,
+.AustraliaCoolsculpting .footer-section .footer-inner .ism-footer-note .col-md-2.hidden-sm.hidden-xs.footer-zinc.info-extra p,
+.AustraliaCoolsculpting .footer-section .footer-inner .ism-footer-note .col-md-2.hidden-sm.hidden-xs.footer-zinc.info-extra p a,
+.AustraliaCoolsculpting .footer-section .footer-inner .ism-footer-note .footer-text.info-extra p a {
+    font-size: 11px !important;
+}
+
+.AustraliaCoolsculpting .footer-section .footer-inner .ism-footer-note .col-md-2.hidden-sm.hidden-xs.footer-zinc.info-extra p a,
+.AustraliaCoolsculpting .footer-section .footer-inner .ism-footer-note .footer-text.info-extra p a {
+    white-space: nowrap;
+    color: #333;
+}
+
+.AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .ba-tab .ba-tab-wrap .ba-supporting-text {
+    max-width: 410px;
+    text-align: left;
+	margin-bottom: 5px;
+    position: absolute;
+    bottom: -40px;
+    font-size: 9px;
+    line-height: 10px;
+    min-height: 30px;
+    transition: bottom ease-in-out 0.3s;
+}
+
+/* .AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .ba-tab:nth-child(odd) .ba-tab-wrap .ba-supporting-text {
+    right: 30px;
+}
+
+.AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .ba-tab:nth-child(even) .ba-tab-wrap .ba-supporting-text {
+    right: auto;
+    left: 30px;
+}
+
+.AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .ba-tab:nth-child(odd) .ba-tab-wrap.disabled .ba-supporting-text {
+    right: auto;
+    left: 30px;
+}
+
+.AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .ba-tab:nth-child(even) .ba-tab-wrap.disabled .ba-supporting-text {
+    right: 30px;
+    left: auto;
+} */
+
+.AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .ba-tab .ba-tab-wrap.active {
+    padding: 25px 25px 60px;
+}
+
+.AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .ba-tab .ba-tab-wrap.active .ba-supporting-text {
+    bottom: 0;
+}
+
+.AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .ba-tab .ba-tab-wrap .ba-supporting-text {
+    left: 20px;
+    right: auto;
+}
+
+.AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .carousal-hdn .ba-tab-expanded span {
+    font-size: 12px;
+    text-align: center;
+    line-height: 23px;
+}
+
+.AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .carousal-hdn .ba-tab-expanded span span {
+    display: block;
+    text-align: center;
+}
+
+.AustraliaCoolsculpting.Home .img-hs-container .hs-content .slide-tab .img-label span,
+.AustraliaCoolsculpting.WhatIsCoolsculpting .img-hs-container .hs-content .slide-tab .img-label span {
+    display: block;
+}
+
+.AustraliaCoolsculpting.Home .img-hs-container .hs-content .slide-tab .img-label span:first-child,
+.AustraliaCoolsculpting.WhatIsCoolsculpting .img-hs-container .hs-content .slide-tab .img-label span:first-child {
+    display: none;
+}
+
+.AustraliaCoolsculpting.Home .img-hs-container .hs-content .slide-tab .img-label span + span,
+.AustraliaCoolsculpting.WhatIsCoolsculpting .img-hs-container .hs-content .slide-tab .img-label span + span {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .carousal-hdn .ba-tab-expanded span span + span {
+    display: inline-block;
+
+}
+
+.AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .carousal-hdn .crsl-wrap .carousal-note .courtesy-text {
+    text-align: left;
+    width: 81%;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .ba-tab .ba-tab-wrap {
+    margin-top: 50px;
+    position: relative;
+    /* min-width: 418px; */
+}
+.AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .carousal-hdn .ba-tab-expanded span br {
+    display: block;
+}
+
+.AustraliaCoolsculpting.terms-and-conditions-clinic-locator .addInfo-container .privacy-container ol li:first-child p {
+    position: relative;
+    padding-left: 20px;
+}
+
+.AustraliaCoolsculpting.terms-and-conditions-clinic-locator .addInfo-container .privacy-container ol li:first-child p::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #000;
+    top: 15%;
+}
+
+.btn-cs-wrapper a.load-more {
+    margin-top: 40px !important;
+}
+
+.isi-fixed {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 111;
+    height: auto;
+}
+
+.isi-fixed.sticky {
+    position: fixed;
+}
+
+.isi-fixed .isi-wrapper .isi-header {
+    /* background-image: linear-gradient(180deg, #005CB9 0, #142D7B 100%); */
+    background-image: linear-gradient(180deg, #005cb9 0, #005cb9 100%);
+    padding: 5px 20px;
+    height: auto;
+    /* min-height: 45px; */
+    transition: height ease-in 0.3s;
+}
+
+.isi-fixed.sticky .isi-wrapper .isi-header {
+    height: 25px;
+    min-height: auto;
+}
+
+.isi-fixed.sticky .isi-wrapper.expandable.expanded .isi-header {
+    height: auto;
+    overflow: visible;
+}
+
+/* .isi-fixed.sticky .isi-wrapper .isi-header {
+    height: 50px;
+} */
+
+.isi-fixed .isi-wrapper .isi-header .isi-btn {
+    display: none;
+}
+
+
+.isi-fixed.sticky .isi-wrapper.expandable.expanded .expand,
+.isi-fixed.sticky .isi-wrapper.expandable .collapse {
+    display: none;
+}
+
+.isi-fixed.sticky .isi-wrapper.expandable .expand,
+.isi-fixed.sticky .isi-wrapper.expandable.expanded .collapse {
+    display: block;
+}
+
+.isi-fixed .isi-wrapper .isi-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.isi-fixed .isi-wrapper .isi-header p {
+    color: #FFF;
+    margin-bottom: 0;
+    font-size: 9px;
+    font-weight: 500;
+    width: 90%;
+    line-height: 16px;
+}
+
+.isi-fixed .isi-wrapper .isi-header a.isi-btn {
+    color: #FFF;
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    top: 0;
+}
+
+.isi-fixed.sticky .isi-wrapper.expandable .isi-header .isi-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.isi-fixed.sticky .isi-wrapper.expandable.expanded .isi-header .isi-text {
+    text-overflow: initial;
+    overflow: visible;
+    white-space: normal;
+}
+
+.isi-fixed.custom-margin {
+    margin-top: 5px;
+}
+
+.AustraliaCoolsculpting footer.footer-section .footer-inner .block-inner .info-extra-specific.info-extra,
+.AustraliaCoolsculpting footer.footer-section .footer-inner .block-inner .info-extra-global.info-extra {
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+}
+
+.AustraliaCoolsculpting footer.footer-section .footer-inner .block-inner .info-extra-global.info-extra {
+    float: left;
+}
+
+.AustraliaCoolsculpting.Home .block-inner .courtesy-txt,
+.AustraliaCoolsculpting.WhatIsCoolsculpting .block-inner .courtesy-txt {
+    z-index: 1;
+}
+
+.AustraliaCoolsculpting .footer-section .footer-inner .footer-sec2 {
+    margin-top: 0;
+}
+
+.AustraliaCoolsculpting .footer-section .footer-inner .ism-footer-note .col-xs-12.col-sm-12.hidden-md.hidden-lg.footer-zinc.info-extra {
+    display: none;
+}
+
+.AustraliaCoolsculpting.TermsAndCondition .addInfo-container .privacy-container .addr-section {
+    margin-left: 0;
+}
+
+.AustraliaCoolsculpting.TermsAndCondition .addInfo-container .privacy-container .addr-section > .addr-item {
+    margin-bottom: 20px;
+}
+
+.AustraliaCoolsculpting.TermsAndCondition .addInfo-container .privacy-container .addr-section > .addr-item span.addr-label + b,
+.AustraliaCoolsculpting.TermsAndCondition .addInfo-container .privacy-container .addr-section > .addr-item span.addr-label + b p.addr-item,
+.AustraliaCoolsculpting.TermsAndCondition .addInfo-container .privacy-container .addr-section > .addr-item + b p.addr-item {
+    display: flex;
+}
+.AustraliaCoolsculpting.TermsAndCondition .addInfo-container .privacy-container .addr-section > .addr-item + b p.addr-item span.addr-label {
+    margin-right: 8px;
+}
+
+
+.AustraliaCoolsculpting.TermsAndCondition .addInfo-container .privacy-container .addr-section .addr-item b a.gt-link {
+    text-decoration: underline;
+    font-weight: 500;
+    color: #337ab7;
+}
+
+.AustraliaCoolsculpting.TermsAndCondition .addInfo-container .privacy-container .addr-section .addr-item b a.gt-link.email {
+    color: #333;
+    text-decoration: none;
+}
+
+.AustraliaCoolsculpting .australiafooterintro-container .image-container img {
+    width: 100% !important;
+}
+
+.AustraliaCoolsculpting.Home .overview-container .australiavideo .vimeovideowrp {
+    height: 420px !important;
+}
+
+.AustraliaCoolsculpting.Home .overview-container .australiavideo .vimeovideowrp iframe.vimeo-video {
+    width: 100%;
+}
+
+.AustraliaCoolsculpting.Home .overview-container .australiavideo .video-container {
+    padding: 0 !important;
+}
+
+/* .AustraliaCoolsculpting.Home .overview-container .overview-inner .section-text {
+    padding: 0 60px !important;
+    min-height: 370px;
+} */
+.AustraliaCoolsculpting.Home section[page-overview] .overview-container sup.dagger {
+    top: -0.9em;
+}
+
+.AustraliaCoolsculpting.WhatIsCoolsculpting .featurecomp_container sup.diamond {
+    font-size : 70%;
+}
+
+.AustraliaCoolsculpting .block-inner .hs-content .selection-panel .carousal-note .courtesy-text,
+.AustraliaCoolsculpting .block-inner .courtesy-txt {
+    color: #333;
+}
+.AustraliaCoolsculpting.WhatIsCoolsculpting .block-inner .courtesy-txt {
+    font-weight: normal;
+    text-align: left;
+    width: 26%;
+    position: absolute;
+    right: -52px;
+    bottom: 10px;
+    font-size: 9px;
+}
+
+.AustraliaCoolsculpting.Contactus .contactusInformation_container {
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333;
+    margin: 30px auto;
+}
+.AustraliaCoolsculpting.Contactus .contactusInformation_container ul {
+    display: flex;
+}
+
+.AustraliaCoolsculpting.Contactus .contactusInformation_container ul li {
+    margin-right: 50px;
+    height: auto;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.AustraliaCoolsculpting.Contactus .contactusInformation_container ul li h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #005eb8;
+}
+
+.AustraliaCoolsculpting.Contactus .contactusInformation_container span {
+    display: block;
+}
+
+.AustraliaCoolsculpting.Contactus .contactusInformation_container strong {
+    color: #000;
+}
+
+.AustraliaCoolsculpting.Contactus .contactusInformation_container a {
+    color: #333;
+}
+
+.AustraliaCoolsculpting.Contactus .courtesy-text-wrapper .courtesy-text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333;
+    font-family: 'Avenir Next LT W01 Demi';
+    font-weight: 600;
+    letter-spacing: .9px;
+    margin-bottom: 7px;
+}
+
+.AustraliaCoolsculpting.FAQ .faq-wrapper .panel-collapse sup.dagger-sup {
+    top: -6px;
+    font-size: 10px;
+}
+
+
+@media (min-width: 1024px) {
+    .AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .ba-tab .ba-tab-wrap {
+        min-width: 418px;
+    }
+    .AustraliaCoolsculpting.Home .overview-container .australiavideo .vimeovideowrp iframe.vimeo-video {
+        min-height: 435px;
+        min-width: 680px;
+    }
+}
+
+@media (min-width: 1290px) and (max-width: 1360px) {
+    .AustraliaCoolsculpting.Home .overview-container .australiavideo .vimeovideowrp iframe.vimeo-video {
+        min-height: 435px;
+        min-width: 700px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .AustraliaCoolsculpting.Home .overview-container .australiavideo .vimeovideowrp iframe.vimeo-video {
+        min-height: 455px;
+        min-width: 710px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    .AustraliaCoolsculpting.Contactus .contactusInformation_container ul {
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .ba-tab .ba-tab-wrap .ba-supporting-text {
+        bottom: -50px;
+        max-width: 100%;
+    }
+    .AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .carousal-hdn .ba-tab-expanded span {
+        text-align: center;
+        line-height: 16px;
+    }
+    .AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .carousal-hdn .ba-tab-expanded span br {
+        display: none;
+    }
+    .footer-section .footer-inner .country-select .social-icons {
+        padding: 10px 0 20px;
+    }
+
+    .AustraliaCoolsculpting.Home .overview-container .australiavideo .vimeovideowrp {
+        height: auto !important;
+    }
+
+    .AustraliaCoolsculpting.Home .overview-container .australiavideo .video-container {
+        padding: 25px 15px !important;
+    }
+
+    .AustraliaCoolsculpting.Contactus .contactusInformation_container ul li {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .AustraliaCoolsculpting .footer-section .footer-inner .ism-footer-note .footer-text.info-extra {
+        width: 100%;
+    }
+
+    .AustraliaCoolsculpting.HowitWorks section:nth-child(4) .featurecomp_container .featureBox-two .feature-box-content {
+        display: block;
+    }
+
+    .AustraliaCoolsculpting.HowitWorks section:nth-child(4) .featurecomp_container .featureBox-two .item {
+        width: 100%;
+    }
+
+    .AustraliaCoolsculpting.HowitWorks section:nth-child(4) .featurecomp_container .featureBox-two .item .item-info {
+        margin-bottom: 0;
+    }
+
+    .AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .ba-tab .ba-tab-wrap .ba-supporting-text {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .ba-tab .ba-tab-wrap {
+        min-width: 100%;
+        margin-top: 20px;
+    }
+
+    .AustraliaCoolsculpting .footer-section .footer-inner .ism-footer-note .col-md-2.hidden-sm.hidden-xs.footer-zinc.info-extra,
+    .AustraliaCoolsculpting .footer-section .footer-inner .ism-footer-note .footer-text.info-extra {
+        width: 100% !important;
+    }
+
+    .AustraliaCoolsculpting .footer-section .footer-inner .ism-footer-note .col-md-2.hidden-sm.hidden-xs.footer-zinc.info-extra p,
+    .AustraliaCoolsculpting .footer-section .footer-inner .ism-footer-note .footer-text.info-extra p {
+        text-align: center;
+    }
+
+    .AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .carousal-hdn .ba-tab-expanded span {
+        text-align: center;
+        line-height: 16px;
+    }
+    .AustraliaCoolsculpting.WhatIsCoolsculpting .filter-container .ba-container .carousal-hdn .ba-tab-expanded span br,
+    .AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .carousal-hdn .ba-tab-expanded span br {
+        display: none;
+    }
+
+    .AustraliaCoolsculpting.BeforeAfterGallery .filter-container .ba-container .carousal-hdn .crsl-wrap .carousal-note .courtesy-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer.footer-section .footer-inner .block-inner .info-extra-specific.info-extra, 
+    footer.footer-section .footer-inner .block-inner .info-extra-global.info-extra {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    .footer-section .footer-inner .country-select .social-icons {
+        padding: 10px 0 20px;
+    }
+
+    .AustraliaCoolsculpting.TermsAndCondition .addInfo-container .privacy-container .addr-section {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .AustraliaCoolsculpting.TermsAndCondition .addInfo-container .privacy-container .addr-section > .addr-item span.addr-label + b,
+    .AustraliaCoolsculpting.TermsAndCondition .addInfo-container .privacy-container .addr-section > .addr-item span.addr-label + b span {
+        display: inline-block;
+    }
+
+    .AustraliaCoolsculpting.Home .overview-container .australiavideo .vimeovideowrp {
+        height: auto !important;
+    }
+
+    .AustraliaCoolsculpting.Home .overview-container .australiavideo .video-container {
+        padding: 25px 15px !important;
+    }
+
+    .AustraliaCoolsculpting.Contactus .contactusInformation_container ul {
+        display: block;
+        padding: 0 20px;
+    }
+    .AustraliaCoolsculpting.Contactus .contactusInformation_container ul li {
+        margin-right: 0;
+    }
+}

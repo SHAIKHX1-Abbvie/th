@@ -1,0 +1,76 @@
+﻿@media only screen and (min-width: 992px) and (max-width: 1125px) {
+	.main-header .nav-menu ul li a {
+		font-size: 12px
+	}
+	.main-header .nav-menu {
+		width: 84%
+	}
+	.main-header .header-inner {
+		width: 16%
+	}
+	.main-header .header-inner .logo {
+		padding: 26px 0
+	}
+}
+@media only screen and (min-width: 1126px) and (max-width: 1249px) {
+	.main-header .nav-menu ul li a {
+		font-size: 14px
+	}
+	.main-header .header-inner .logo {
+		padding: 22px 0
+	}
+}
+@media only screen and (min-width: 1250px) and (max-width: 1366px) {
+	.main-header ul.main-nav li a {
+		padding: 0 18px
+	}
+	.main-header .nav-menu ul li a {
+		font-size: 14px
+	}
+	.main-header .header-inner .logo {
+		padding: 22px 0
+	}
+}
+@media only screen and (min-width: 992px) and (max-width: 1249px) {
+	.main-header ul.main-nav li a {
+		padding: 0 4px
+	}
+}
+@media only screen and (min-width: 1126px) and (max-width: 1366px) {
+	.main-header .nav-menu {
+		width: 85%
+	}
+	.main-header .header-inner {
+		width: 15%
+	}
+}
+@media only screen and (min-width: 768px) {
+	.featureBox-three .feature-box-content .item:nth-child(1) img.tumpUp{
+		width: 190px;
+		position: relative;
+		top: 12px;
+	}
+	.featureBox-three .feature-box-content .item:nth-child(2) img.tumpUp{
+		width: 190px;
+		position: relative;
+		top: 12px;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.sticky-header {
+		padding-top: 80px;
+	}
+	.main-header .header-inner .logo {
+		padding: 15px 0
+	}
+	.featureBox-three .feature-box-content .item:nth-child(1) img.tumpUp{
+		width: auto;
+		position: relative;
+		top: auto;
+	}
+	.featureBox-three .feature-box-content .item:nth-child(2) img.tumpUp{
+		width: auto;
+		position: relative;
+		top: auto;
+	}
+}

@@ -1,0 +1,5 @@
+# API redirect for GetICLClinicResults
+/sc/api/FindClinic/GetICLClinicResults https://99f3592b.netlify-common-functions.pages.dev/icl 200
+
+# SPA fallback
+/* /index.html 200

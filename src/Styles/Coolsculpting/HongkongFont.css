@@ -1,0 +1,343 @@
+﻿@font-face {
+    font-family: 'HongKong';
+    src: url('/Fonts/HongKong.woff2') format('woff2');
+    font-display: optional;
+}
+
+body{
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.faq_container .panel-title > a, .main-header ul.main-nav .list-item {
+    font-weight: normal !important;
+}
+
+h1 {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+h2 {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+
+a.find-more, h3, h5 {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.btn-text {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.input-group .search-loc {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.main-header .nav-menu ul li a {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.main-header ul.lan-select li a {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+@media only screen and (min-width: 992px) {
+
+    .slide-container .image-container .add-ons > p {
+        font-family: Microsoft JhengHei W42 Light !important;
+        font-weight: normal !important;
+    }
+}
+
+.slide-container .image-container .bottom-left-text {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.slide-container .tab .slide-cta .text-cta {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.slide-container .dialog-box p {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.banner-container .banner-title {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+
+.overview-inner .section-text p {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+
+.img-hs-container .hs-content .courtesy-text {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.action-block .action-text a .link-text {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.info-container .text-checked {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.intro-container .dialog-box p {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.video-container .dialog-box .trans-view {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.comp-container .option-panel .panel-item > span {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.comp-container .filter-container .pills {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.comp-container .text-extra {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.comp-container .carousal-hdn .ba-tab-expanded span {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.comp-container .carousal-hdn #crsl-close a {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.comp-container .exp-editor-area .experience-editor-wrapper .before-and-after-items .carousal-hdn .ba-tab-expanded .close-text span {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.sitemap_wrapper .sm-title {
+    display: inline-block;
+    margin: 10px 0;
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-size: 14px;
+    font-weight: 900;
+    color: #005eb8
+}
+
+@media only screen and (min-width: 768px) {
+    .sitemap_wrapper .sm-title {
+        font-size: 18px
+    }
+}
+
+.sitemap_wrapper .sm-content {
+    margin-left: 25px
+}
+
+    .quote-inner .quote, .sitemap_wrapper .sm-content .sm-page {
+        font-family: Microsoft JhengHei W42 Light !important;
+        font-weight: normal !important;
+    }
+
+.featurecomp_container .fc_p {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.featurecomp_container .fc_pa {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.addInfo-container p {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.cookie-wrapper .cookie-text {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+
+.cookie-wrapper .link-to {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.clinic-wrapper .clinicInfo-inner .ci-info > p, .pagetitle-container .pagetitle_desc {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.faq_container .panel-title > a {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.faq_container .quicklink {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+#cs-model .modal-dialog .modal-title {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+#cs-model .cs-wrapper .cs-text {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.adverse-text-wrapper .adverse-text {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.clinic-wrapper .clinic-wrapper-inner .cl-anchors .cl-links {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.clinic-wrapper .clinicInfo-inner .clinicItem-wrapper .clinicInfo-address > address, .clinic-wrapper .clinicInfo-inner .clinicItem-wrapper .clinicInfo-address > span {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+
+
+.clinic-wrapper .clinicInfo-inner .clinicItem-wrapper .clinicInfo-address > a {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.clinic-wrapper .clinicInfo-inner .clinicItem-wrapper .pin-info .pin .pin-marker {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.clinic-wrapper .clinicInfo-inner .clinicItem-wrapper .ci-distance, .clinic-wrapper .clinicInfo-inner .clinicItem-wrapper .ci-website {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.clinic-wrapper .clinicInfo-inner .clinicItem-wrapper .ci-title {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.clinic-wrapper .info-wrap {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.map-info .clinicInfo-address > a, .map-info .clinicInfo-address > span {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+
+.clinic-list-wrapper a.list-item {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+
+.cs-result-view .allclinics-lnk {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.cs-search-results .cs-info-wrapper .cs-clinic-info .clinic-description > .cs-info-item {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+
+.cs-search-results .cs-info-wrapper .cs-clinic-about p {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.cs-search-results .cs-result-footer .ci-website {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.clinic-wrapper-inner .clinic-header .clinic-desc {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+
+.footer-section .clinic-loc .label-clinic {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.footer-section .footer-inner .info-text, .footer-section .footer-inner .info-text a {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.footer-section .footer-inner .info-extra p {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.footer-section .footer-inner .country-change {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+.footer-section .footer-inner .footer-logo-info {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+
+.footer-section ul.footer-links > li a {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+
+.main .main-container .btn-lnk {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+#cookie-law-info-bar p {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}
+
+#cookie-law-info-bar .cookie-heading, .h4, h4 {
+    font-family: Microsoft JhengHei W42 Light !important;
+    font-weight: normal !important;
+}

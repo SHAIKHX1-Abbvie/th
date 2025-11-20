@@ -1,0 +1,21 @@
+[Settings]
+  ID = "{Project}"
+
+[build]
+  functions = "functions"
+  publish = "src"
+  command = "npm run build"
+
+[dev]
+  publish = "src"
+
+[[redirects]]
+  from = "/sc/api/FindClinic/GetICLClinicResults"
+  to = "https://99f3592b.netlify-common-functions.pages.dev/icl"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

@@ -1,0 +1,304 @@
+﻿body{
+    font-family: AvenirNextLTW01-Medium;
+}
+
+h1 {
+    font-family: Avenir Next LT W01 Demi;
+}
+
+h2 {
+    font-family: Avenir Next LT W01 Demi;
+}
+h3 {
+    font-family: Avenir Next LT W01 Demi;
+}
+h4 {
+    font-family: Avenir Next LT W01 Demi;
+}
+h5 {
+    font-family: Avenir Next LT W01 Demi;
+}
+a.find-more {
+    font-family: Avenir Next LT W01 Demi;
+}
+
+.btn-text {
+    font-family: Avenir Next LT W01 Demi;
+}
+
+.input-group .search-loc {
+    font-family: Avenir Next LT W01 Demi;
+}
+
+.main-header .nav-menu ul li a {
+   font-family: Avenir Next LT W01 Demi;
+}
+
+.main-header ul.lan-select li a {
+    font-family: Avenir Next LT W01 Demi;
+}
+
+@media only screen and (min-width: 992px) {
+
+    .slide-container .image-container .add-ons > p {
+        font-family: AvenirNextLTW01-Medium;
+    }
+}
+
+.slide-container .image-container .bottom-left-text {
+    font-family: Avenir Next LT W01 Demi;
+}
+
+.slide-container .tab .slide-cta .text-cta {
+     font-family: Avenir Next LT W01 Demi;
+}
+
+.slide-container .dialog-box p {
+      font-family: AvenirNextLTW01-Medium;
+}
+
+.banner-container .banner-title {
+     font-family: AvenirNextLTW01-Medium;
+}
+
+
+.overview-inner .section-text p {
+     font-family: AvenirNextLTW01-Medium;
+}
+
+.img-hs-container .hs-header > p {
+    font-family: AvenirNextLTW01-Medium;
+}
+.img-hs-container .hs-content .pills {
+    font-family: AvenirNextLTW01-Medium;
+}
+.img-hs-container .hs-content .slide-tab .img-label {
+    font: 12px "Avenir Next LT W01 Demi";
+}
+.img-hs-container .hs-content .courtesy-text {
+     font-family: AvenirNextLTW01-Medium;
+   
+}
+
+.action-block .action-text a .link-text {
+    font-family: Avenir Next LT W01 Demi;
+}
+
+.info-container .text-checked {
+    font-family: Avenir Next LT W01 Demi;
+}
+
+.intro-container .dialog-box p {
+    font-family: AvenirNextLTW01-Medium;
+}
+
+.video-container .dialog-box .trans-view {
+     font-family: Avenir Next LT W01 Demi;
+}
+
+.comp-container .option-panel .panel-item > span {
+     font-family: AvenirNextLTW01-Medium;
+}
+
+.comp-container .filter-container .pills {
+     font-family: AvenirNextLTW01-Medium;
+}
+
+.comp-container .text-extra {
+    font-family: AvenirNextLTW01-Medium;
+}
+.comp-container .ba-tab .diff-img span {
+    font-family: Avenir Next LT W01 Demi;
+
+}
+.comp-container .carousal-hdn .ba-tab-expanded span {
+     font-family: Avenir Next LT W01 Demi;
+}
+
+.comp-container .carousal-hdn #crsl-close a {
+    font-family: Avenir Next LT W01 Demi;
+}
+
+.comp-container .exp-editor-area .experience-editor-wrapper .before-and-after-items .carousal-hdn .ba-tab-expanded .close-text span {
+    font-family: Avenir Next LT W01 Demi;
+}
+
+.sitemap_wrapper .sm-title {
+     font-family: Avenir Next LT W01 Demi;
+}
+.sitemap_wrapper .sm-content .sm-page {
+        font-family: AvenirNextLTW01-Medium;
+
+    }
+	.quote-inner .quote {
+
+        font-family: AvenirNextLTW01-Medium;
+    }
+
+
+.featurecomp_container .fc_p {
+     font-family: AvenirNextLTW01-Medium;
+}
+
+.featurecomp_container .fc_pa {
+   font-family: AvenirNextLTW01-Medium;
+}
+
+.addInfo-container p {
+     font-family: AvenirNextLTW01-Medium;
+}
+
+.cookie-wrapper .cookie-text {
+     font-family: Avenir Next LT W01 Demi;
+}
+
+
+.cookie-wrapper .link-to {
+    font-family: Avenir Next LT W01 Demi;
+}
+
+.clinic-wrapper .clinicInfo-inner .ci-info > p, .pagetitle-container .pagetitle_desc {
+     font-family: AvenirNextLTW01-Medium;
+}
+
+.faq_container .panel-title > a {
+     font-family: Avenir Next LT W01 Demi;
+}
+
+.faq_container .quicklink {
+    font-family: AvenirNextLTW01-Medium;
+}
+
+#cs-model .modal-dialog .modal-title {
+     font-family: AvenirNextLTW01-Medium;
+}
+
+#cs-model .cs-wrapper .cs-text {
+      font-family: Avenir Next LT W01 Demi;
+}
+
+.adverse-text-wrapper .adverse-text {
+    font-family: Avenir Next LT W01 Demi;
+}
+
+.clinic-wrapper .clinic-wrapper-inner .cl-anchors .cl-links {
+    font-family: Avenir Next LT W01 Demi;
+}
+.clinic-wrapper .clinicInfo-inner .ci-info > p {
+
+            font-family: AvenirNextLTW01-Medium;
+
+        }
+.clinic-wrapper .clinicInfo-inner .clinicItem-wrapper .clinicInfo-address > address, .clinic-wrapper .clinicInfo-inner .clinicItem-wrapper .clinicInfo-address > span {
+    font-family: AvenirNextLTW01-Medium;
+}
+
+
+
+.clinic-wrapper .clinicInfo-inner .clinicItem-wrapper .clinicInfo-address > a {
+     font-family: AvenirNextLTW01-Medium;
+}
+
+.clinic-wrapper .clinicInfo-inner .clinicItem-wrapper .pin-info .pin .pin-marker {
+    font-family: Avenir Next LT W01 Demi;
+}
+
+.clinic-wrapper .clinicInfo-inner .clinicItem-wrapper .ci-distance, .clinic-wrapper .clinicInfo-inner .clinicItem-wrapper .ci-website {
+     font-family: Avenir Next LT W01 Demi;
+}
+
+.clinic-wrapper .clinicInfo-inner .clinicItem-wrapper .ci-title {
+     font-family: Avenir Next LT W01 Demi;
+}
+.clinic-wrapper .map-info .ci-website {
+    font-family: Avenir Next LT W01 Demi;
+
+}
+.clinic-wrapper .map-info .ci-title {
+
+    font-family: Avenir Next LT W01 Demi;
+
+}
+.clinic-wrapper .allclinics-lnk {
+
+    font-family: Avenir Next LT W01 Demi;
+
+}
+.clinic-wrapper .info-wrap {
+     font-family: Avenir Next LT W01 Demi !important;
+}
+
+.map-info .clinicInfo-address > a, .map-info .clinicInfo-address > span {
+    font-family: AvenirNextLTW01-Medium;
+}
+
+
+.clinic-list-wrapper a.list-item {
+   font-family: AvenirNextLTW01-Medium;
+}
+
+
+.cs-result-view .allclinics-lnk {
+    font-family: Avenir Next LT W01 Demi;
+}
+
+.cs-search-results .cs-info-wrapper .cs-clinic-info .clinic-description > .cs-info-item {
+     font-family: AvenirNextLTW01-Medium;
+}
+
+
+.cs-search-results .cs-info-wrapper .cs-clinic-about p {
+    font-family: AvenirNextLTW01-Medium;
+}
+
+.cs-search-results .cs-result-footer .ci-website {
+    font-family: Avenir Next LT W01 Demi;
+}
+
+.clinic-wrapper-inner .clinic-header .clinic-desc {
+     font-family: AvenirNextLTW01-Medium;
+}
+
+
+.footer-section .clinic-loc .label-clinic {
+    font-family: Avenir Next LT W01 Demi;
+}
+
+.footer-section .footer-inner .info-text, .footer-section .footer-inner .info-text a {
+    font-family: AvenirNextLTW01-Medium;
+}
+
+.footer-section .footer-inner .info-extra p {
+     font-family: AvenirNextLTW01-Regular;
+}
+
+.footer-section .footer-inner .country-change {
+     font-family: Avenir Next LT W01 Demi;
+}
+
+.footer-section .footer-inner .footer-logo-info {
+     font-family: AvenirNextLTW01-Medium;
+}
+
+
+.footer-section ul.footer-links > li a {
+      font-family: Avenir Next LT W01 Demi;
+}
+
+
+.main .main-container .btn-lnk {
+    font-family: Avenir Next LT W01 Demi;
+}
+
+#cookie-law-info-bar p {
+    font-family: AvenirNextLTW01-Medium;
+}
+
+#cookie-law-info-bar .cookie-heading, .h4, h4 {
+     font-family: AvenirNextLTW01-Medium;
+}
+.blog .info-date {
+
+    font-family: AvenirNextLTW01-Medium;
+
+}
